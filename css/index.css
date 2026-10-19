@@ -96,6 +96,7 @@ img {
   position: relative;
   white-space: nowrap;
   transition: color 0.25s;
+  display: inline-block;
 }
 .nav-link::after {
   content: "";
@@ -634,6 +635,11 @@ img {
   right: 145px;
   color: var(--primary);
   font-size: 22px;
+}
+@media (max-width:1400px) {
+  .about-quote i {
+  display: none;
+}
 }
 .about-quote p {
   font-size: 15px;
