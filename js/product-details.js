@@ -569,7 +569,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         related.forEach(item => {
             const col = document.createElement("div");
-            col.className = "col-6 col-lg-3";
+            col.className = "col-md-6 col-lg-3";
 
             const card = document.createElement("article");
             card.className = "alf-detail-related-card";
