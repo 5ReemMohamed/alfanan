@@ -3,8 +3,10 @@ window.products = [
     {
         id: 1,
         name: "درع كريستال فاخر",
+        nameEn: "Premium Crystal Award",
         category: "shields",
         categoryName: "دروع تذكارية",
+        categoryNameEn: "Commemorative Awards",
         price: 287.50,
         image: "../images/1.jpg",
         images: [
@@ -13,16 +15,21 @@ window.products = [
             "../images/3.jpg",
             "../images/4.jpg",
             "../images/5.jpg",
-            "../images/6.jpg",
+            "../images/6.jpg"
         ],
         description: "درع كريستال أنيق بتصميم مميز يناسب حفلات التكريم والمناسبات الرسمية.",
-        badge: "الأكثر طلباً"
+        descriptionEn: "An elegant premium crystal award with a distinctive design, ideal for recognition ceremonies and official events.",
+        badge: "الأكثر طلباً",
+        badgeEn: "Best Seller",
+        videoUrl: "https://youtu.be/BBZ6WAg4Mbk?si=NiNE687KKxSpk0hf"
     },
     {
         id: 2,
         name: "درع خشبي فاخر",
+        nameEn: "Premium Wooden Award",
         category: "shields",
         categoryName: "دروع تذكارية",
+        categoryNameEn: "Commemorative Awards",
         price: 184.00,
         image: "../images/1.jpg",
         images: [
@@ -31,16 +38,21 @@ window.products = [
             "../images/3.jpg",
             "../images/4.jpg",
             "../images/5.jpg",
-            "../images/6.jpg",
+            "../images/6.jpg"
         ],
         description: "درع خشبي راقٍ بتفاصيل فاخرة وإمكانية تخصيص الاسم والشعار.",
-        badge: ""
+        descriptionEn: "An elegant wooden award with luxurious details and the option to customize the name and logo.",
+        badge: "",
+        badgeEn: "",
+        videoUrl: "https://youtu.be/BBZ6WAg4Mbk?si=NiNE687KKxSpk0hf"
     },
     {
         id: 3,
         name: "درع خشبي نحاس",
+        nameEn: "Wooden and Brass Award",
         category: "shields",
         categoryName: "دروع تذكارية",
+        categoryNameEn: "Commemorative Awards",
         price: 218.50,
         image: "../images/1.jpg",
         images: [
@@ -49,16 +61,21 @@ window.products = [
             "../images/3.jpg",
             "../images/4.jpg",
             "../images/5.jpg",
-            "../images/6.jpg",
+            "../images/6.jpg"
         ],
         description: "تصميم يجمع بين الخشب والنحاس لإهداء تكريمي مميز.",
-        badge: "مميز"
+        descriptionEn: "A distinctive award combining wood and brass for an elegant and memorable recognition gift.",
+        badge: "مميز",
+        badgeEn: "Featured",
+        videoUrl: "https://youtu.be/BBZ6WAg4Mbk?si=NiNE687KKxSpk0hf"
     },
     {
-        id: 1,
+        id: 4,
         name: "درع كريستال فاخر",
+        nameEn: "Premium Crystal Award",
         category: "shields",
         categoryName: "دروع تذكارية",
+        categoryNameEn: "Commemorative Awards",
         price: 287.50,
         image: "../images/1.jpg",
         images: [
@@ -67,16 +84,21 @@ window.products = [
             "../images/3.jpg",
             "../images/4.jpg",
             "../images/5.jpg",
-            "../images/6.jpg",
+            "../images/6.jpg"
         ],
         description: "درع كريستال أنيق بتصميم مميز يناسب حفلات التكريم والمناسبات الرسمية.",
-        badge: "الأكثر طلباً"
+        descriptionEn: "An elegant premium crystal award with a distinctive design, ideal for recognition ceremonies and official events.",
+        badge: "الأكثر طلباً",
+        badgeEn: "Best Seller",
+        videoUrl: ""
     },
     {
-        id: 2,
+        id: 5,
         name: "درع خشبي فاخر",
+        nameEn: "Premium Wooden Award",
         category: "shields",
         categoryName: "دروع تذكارية",
+        categoryNameEn: "Commemorative Awards",
         price: 184.00,
         image: "../images/1.jpg",
         images: [
@@ -85,16 +107,21 @@ window.products = [
             "../images/3.jpg",
             "../images/4.jpg",
             "../images/5.jpg",
-            "../images/6.jpg",
+            "../images/6.jpg"
         ],
         description: "درع خشبي راقٍ بتفاصيل فاخرة وإمكانية تخصيص الاسم والشعار.",
-        badge: ""
+        descriptionEn: "An elegant wooden award with luxurious details and the option to customize the name and logo.",
+        badge: "",
+        badgeEn: "",
+        videoUrl: "https://youtu.be/BBZ6WAg4Mbk?si=NiNE687KKxSpk0hf"
     },
     {
-        id: 3,
+        id: 6,
         name: "درع خشبي نحاس",
+        nameEn: "Wooden and Brass Award",
         category: "shields",
         categoryName: "دروع تذكارية",
+        categoryNameEn: "Commemorative Awards",
         price: 218.50,
         image: "../images/1.jpg",
         images: [
@@ -103,16 +130,21 @@ window.products = [
             "../images/3.jpg",
             "../images/4.jpg",
             "../images/5.jpg",
-            "../images/6.jpg",
+            "../images/6.jpg"
         ],
         description: "تصميم يجمع بين الخشب والنحاس لإهداء تكريمي مميز.",
-        badge: "مميز"
+        descriptionEn: "A distinctive award combining wood and brass for an elegant and memorable recognition gift.",
+        badge: "مميز",
+        badgeEn: "Featured",
+        videoUrl: "https://youtu.be/BBZ6WAg4Mbk?si=NiNE687KKxSpk0hf"
     },
     {
-        id: 1,
+        id: 7,
         name: "درع كريستال فاخر",
+        nameEn: "Premium Crystal Award",
         category: "shields",
         categoryName: "دروع تذكارية",
+        categoryNameEn: "Commemorative Awards",
         price: 287.50,
         image: "../images/1.jpg",
         images: [
@@ -121,16 +153,21 @@ window.products = [
             "../images/3.jpg",
             "../images/4.jpg",
             "../images/5.jpg",
-            "../images/6.jpg",
+            "../images/6.jpg"
         ],
         description: "درع كريستال أنيق بتصميم مميز يناسب حفلات التكريم والمناسبات الرسمية.",
-        badge: "الأكثر طلباً"
+        descriptionEn: "An elegant premium crystal award with a distinctive design, ideal for recognition ceremonies and official events.",
+        badge: "الأكثر طلباً",
+        badgeEn: "Best Seller",
+        videoUrl: "https://youtu.be/BBZ6WAg4Mbk?si=NiNE687KKxSpk0hf"
     },
     {
-        id: 2,
+        id: 8,
         name: "درع خشبي فاخر",
+        nameEn: "Premium Wooden Award",
         category: "shields",
         categoryName: "دروع تذكارية",
+        categoryNameEn: "Commemorative Awards",
         price: 184.00,
         image: "../images/1.jpg",
         images: [
@@ -139,16 +176,21 @@ window.products = [
             "../images/3.jpg",
             "../images/4.jpg",
             "../images/5.jpg",
-            "../images/6.jpg",
+            "../images/6.jpg"
         ],
         description: "درع خشبي راقٍ بتفاصيل فاخرة وإمكانية تخصيص الاسم والشعار.",
-        badge: ""
+        descriptionEn: "An elegant wooden award with luxurious details and the option to customize the name and logo.",
+        badge: "",
+        badgeEn: "",
+        videoUrl: "https://youtu.be/BBZ6WAg4Mbk?si=NiNE687KKxSpk0hf"
     },
     {
-        id: 3,
+        id: 9,
         name: "درع خشبي نحاس",
+        nameEn: "Wooden and Brass Award",
         category: "shields",
         categoryName: "دروع تذكارية",
+        categoryNameEn: "Commemorative Awards",
         price: 218.50,
         image: "../images/1.jpg",
         images: [
@@ -157,16 +199,21 @@ window.products = [
             "../images/3.jpg",
             "../images/4.jpg",
             "../images/5.jpg",
-            "../images/6.jpg",
+            "../images/6.jpg"
         ],
         description: "تصميم يجمع بين الخشب والنحاس لإهداء تكريمي مميز.",
-        badge: "مميز"
+        descriptionEn: "A distinctive award combining wood and brass for an elegant and memorable recognition gift.",
+        badge: "مميز",
+        badgeEn: "Featured",
+        videoUrl: "https://youtu.be/BBZ6WAg4Mbk?si=NiNE687KKxSpk0hf"
     },
     {
-        id: 1,
+        id: 10,
         name: "درع كريستال فاخر",
+        nameEn: "Premium Crystal Award",
         category: "shields",
         categoryName: "دروع تذكارية",
+        categoryNameEn: "Commemorative Awards",
         price: 287.50,
         image: "../images/1.jpg",
         images: [
@@ -175,16 +222,21 @@ window.products = [
             "../images/3.jpg",
             "../images/4.jpg",
             "../images/5.jpg",
-            "../images/6.jpg",
+            "../images/6.jpg"
         ],
         description: "درع كريستال أنيق بتصميم مميز يناسب حفلات التكريم والمناسبات الرسمية.",
-        badge: "الأكثر طلباً"
+        descriptionEn: "An elegant premium crystal award with a distinctive design, ideal for recognition ceremonies and official events.",
+        badge: "الأكثر طلباً",
+        badgeEn: "Best Seller",
+        videoUrl: "https://youtu.be/BBZ6WAg4Mbk?si=NiNE687KKxSpk0hf"
     },
     {
-        id: 2,
+        id: 11,
         name: "درع خشبي فاخر",
+        nameEn: "Premium Wooden Award",
         category: "shields",
         categoryName: "دروع تذكارية",
+        categoryNameEn: "Commemorative Awards",
         price: 184.00,
         image: "../images/1.jpg",
         images: [
@@ -193,16 +245,21 @@ window.products = [
             "../images/3.jpg",
             "../images/4.jpg",
             "../images/5.jpg",
-            "../images/6.jpg",
+            "../images/6.jpg"
         ],
         description: "درع خشبي راقٍ بتفاصيل فاخرة وإمكانية تخصيص الاسم والشعار.",
-        badge: ""
+        descriptionEn: "An elegant wooden award with luxurious details and the option to customize the name and logo.",
+        badge: "",
+        badgeEn: "",
+        videoUrl: "https://youtu.be/BBZ6WAg4Mbk?si=NiNE687KKxSpk0hf"
     },
     {
-        id: 3,
+        id: 12,
         name: "درع خشبي نحاس",
+        nameEn: "Wooden and Brass Award",
         category: "shields",
         categoryName: "دروع تذكارية",
+        categoryNameEn: "Commemorative Awards",
         price: 218.50,
         image: "../images/1.jpg",
         images: [
@@ -211,16 +268,21 @@ window.products = [
             "../images/3.jpg",
             "../images/4.jpg",
             "../images/5.jpg",
-            "../images/6.jpg",
+            "../images/6.jpg"
         ],
         description: "تصميم يجمع بين الخشب والنحاس لإهداء تكريمي مميز.",
-        badge: "مميز"
+        descriptionEn: "A distinctive award combining wood and brass for an elegant and memorable recognition gift.",
+        badge: "مميز",
+        badgeEn: "Featured",
+        videoUrl: "https://youtu.be/BBZ6WAg4Mbk?si=NiNE687KKxSpk0hf"
     },
     {
-        id: 1,
+        id: 13,
         name: "درع كريستال فاخر",
+        nameEn: "Premium Crystal Award",
         category: "shields",
         categoryName: "دروع تذكارية",
+        categoryNameEn: "Commemorative Awards",
         price: 287.50,
         image: "../images/1.jpg",
         images: [
@@ -229,16 +291,21 @@ window.products = [
             "../images/3.jpg",
             "../images/4.jpg",
             "../images/5.jpg",
-            "../images/6.jpg",
+            "../images/6.jpg"
         ],
         description: "درع كريستال أنيق بتصميم مميز يناسب حفلات التكريم والمناسبات الرسمية.",
-        badge: "الأكثر طلباً"
+        descriptionEn: "An elegant premium crystal award with a distinctive design, ideal for recognition ceremonies and official events.",
+        badge: "الأكثر طلباً",
+        badgeEn: "Best Seller",
+        videoUrl: "https://youtu.be/BBZ6WAg4Mbk?si=NiNE687KKxSpk0hf"
     },
     {
-        id: 2,
+        id: 14,
         name: "درع خشبي فاخر",
+        nameEn: "Premium Wooden Award",
         category: "shields",
         categoryName: "دروع تذكارية",
+        categoryNameEn: "Commemorative Awards",
         price: 184.00,
         image: "../images/1.jpg",
         images: [
@@ -247,16 +314,21 @@ window.products = [
             "../images/3.jpg",
             "../images/4.jpg",
             "../images/5.jpg",
-            "../images/6.jpg",
+            "../images/6.jpg"
         ],
         description: "درع خشبي راقٍ بتفاصيل فاخرة وإمكانية تخصيص الاسم والشعار.",
-        badge: ""
+        descriptionEn: "An elegant wooden award with luxurious details and the option to customize the name and logo.",
+        badge: "",
+        badgeEn: "",
+        videoUrl: "https://youtu.be/BBZ6WAg4Mbk?si=NiNE687KKxSpk0hf"
     },
     {
-        id: 3,
+        id: 15,
         name: "درع خشبي نحاس",
+        nameEn: "Wooden and Brass Award",
         category: "shields",
         categoryName: "دروع تذكارية",
+        categoryNameEn: "Commemorative Awards",
         price: 218.50,
         image: "../images/1.jpg",
         images: [
@@ -265,9 +337,12 @@ window.products = [
             "../images/3.jpg",
             "../images/4.jpg",
             "../images/5.jpg",
-            "../images/6.jpg",
+            "../images/6.jpg"
         ],
         description: "تصميم يجمع بين الخشب والنحاس لإهداء تكريمي مميز.",
-        badge: "مميز"
+        descriptionEn: "A distinctive award combining wood and brass for an elegant and memorable recognition gift.",
+        badge: "مميز",
+        badgeEn: "Featured",
+        videoUrl: "https://youtu.be/BBZ6WAg4Mbk?si=NiNE687KKxSpk0hf"
     }
 ];
