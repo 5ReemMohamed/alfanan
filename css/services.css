@@ -686,7 +686,10 @@ input {
     font-weight: 900;
     pointer-events: none;
 }
-
+html[lang="en"] .alf-sv-card-number {
+     left: 89%;
+  
+}
 .alf-sv-empty {
     text-align: center;
     padding: 65px 20px;
@@ -1110,4 +1113,30 @@ input {
         animation: none !important;
         transition: none !important;
     }
+}
+
+html[lang="en"] .alf-sv-custom {
+    direction: ltr;
+}
+
+html[lang="en"] .alf-sv-custom-box {
+    direction: ltr;
+}
+
+html[lang="en"] .alf-sv-custom-text {
+    direction: ltr;
+    text-align: left;
+}
+
+html[lang="en"] .alf-sv-custom-text h2,
+html[lang="en"] .alf-sv-custom-text p {
+    text-align: left;
+}
+
+html[lang="en"] .alf-sv-custom-btn {
+    direction: ltr;
+}
+
+html[lang="en"] .alf-sv-custom-btn .fa-arrow-up-left {
+    transform: scaleX(-1);
 }
