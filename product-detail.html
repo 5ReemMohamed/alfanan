@@ -1,0 +1,749 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="css/all.min.css" />
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+
+  <body>
+   <div class="alf-topbar">
+    <div class="alf-topbar-container">
+
+        <div class="alf-topbar-search">
+            <i class="fas fa-search"></i>
+            <input
+                type="search"
+                id="siteSearch"
+                data-i18n-placeholder="topbar.searchPlaceholder"
+                placeholder="ابحث عن منتج أو خدمة..."
+            >
+        </div>
+
+        <div class="alf-topbar-delivery">
+            <i class="fas fa-truck-fast"></i>
+            <span data-i18n="topbar.deliveryMessage">
+                توصيل مجاني داخل مكة لأي طلب فوق
+                <strong>500 ريال</strong>
+            </span>
+        </div>
+
+        <button class="alf-theme-toggle" id="themeToggle" aria-label="Change theme">
+            <i class="fas fa-moon"></i>
+        </button>
+
+    </div>
+</div>  
+<div class="language-switcher" id="languageSwitcher">
+    <button
+        class="language-switcher-btn"
+        id="languageSwitcherBtn"
+        type="button"
+        aria-label="Change language"
+        aria-expanded="false"
+        aria-controls="languageSwitcherMenu"
+    >
+        <span class="language-current-flag" id="currentLangFlag">🇸🇦</span>
+        <span class="language-current-code" id="currentLangCode">AR</span>
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+    <div class="language-switcher-menu" id="languageSwitcherMenu">
+        <button type="button" class="language-option active" data-lang="ar">
+            <span>🇸🇦</span>
+            <span>العربية</span>
+            <i class="fa-solid fa-check"></i>
+        </button>
+
+        <button type="button" class="language-option" data-lang="en">
+            <span>🇺🇸</span>
+            <span>English</span>
+            <i class="fa-solid fa-check"></i>
+        </button>
+    </div>
+</div>
+
+<header class="site-header">
+    <div class="header-inner">
+
+        <a href="index.html" class="d-flex flex-row"
+           aria-label="الفنّان الرئيسية">
+            <img src="images/logo-2.png" height="40" alt="">
+            <img src="images/logo-3.png" height="40" alt="">
+        </a>
+
+        <button class="mobile-toggle" id="mobileToggle"
+                aria-label="فتح القائمة" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+      <nav class="main-nav" id="mainNav">
+    <a href="index.html" class="nav-link">
+        <span data-i18n="nav.home">الرئيسية</span>
+    </a>
+
+    <div id="navCategories"></div>
+
+    <a href="products.html" class="nav-link">
+        <span data-i18n="nav.marketing">التسويق</span>
+    </a>
+</nav>
+    </div>
+</header>
+
+
+
+<main>
+ 
+
+
+
+<section class="alf-detail-breadcrumb-section">
+    <div class="container py-5">
+        <div class="alf-detail-breadcrumb-inner py-5">
+            <div>
+                <span class="alf-detail-eyebrow">
+                    <i class="fas fa-gem"></i>
+                    <span data-i18n="productDetail.breadcrumb.eyebrow">منتجات الفنان المميزة</span>
+                </span>
+                <h1 id="alfBreadcrumbTitle">تفاصيل المنتج</h1>
+                <p data-i18n="productDetail.breadcrumb.description">
+                    تفاصيل دقيقة وجودة تنفيذ تليق بمناسباتك وأعمالك.
+                </p>
+            </div>
+
+            <nav class="alf-detail-breadcrumb" aria-label="مسار التنقل">
+                <a href="index.html" data-i18n="productDetail.breadcrumb.home">الرئيسية</a>
+                <i class="fas fa-chevron-left"></i>
+                <a href="products.html" data-i18n="productDetail.breadcrumb.products">المنتجات</a>
+                <i class="fas fa-chevron-left"></i>
+                <span id="alfBreadcrumbCurrent">تفاصيل المنتج</span>
+            </nav>
+        </div>
+    </div>
+</section>
+
+<main>
+    <section class="alf-detail-product-section">
+        <div class="container">
+            <div class="row g-4 align-items-start">
+                <div class="col-lg-6">
+                    <div class="alf-detail-gallery">
+                        <div class="alf-detail-main-image-wrap">
+                            <div class="alf-detail-gallery-badge">
+                                <i class="fas fa-images"></i>
+                                <span data-i18n="productDetail.gallery.title">معرض صور المنتج</span>
+                            </div>
+
+                            <img
+                                id="alfDetailMainImage"
+                                class="alf-detail-main-image"
+                                src=""
+                                alt="صورة المنتج"
+                            >
+
+                            <button
+                                type="button"
+                                class="alf-detail-zoom"
+                                id="alfDetailZoom"
+                                aria-label="تكبير الصورة"
+                                data-i18n-title="productDetail.gallery.zoom"
+                            >
+                                <i class="fas fa-expand"></i>
+                            </button>
+
+                            <button
+                                type="button"
+                                class="alf-detail-gallery-arrow alf-detail-gallery-prev"
+                                id="alfDetailPrev"
+                                aria-label="الصورة السابقة"
+                                data-i18n-title="productDetail.gallery.previous"
+                            >
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+
+                            <button
+                                type="button"
+                                class="alf-detail-gallery-arrow alf-detail-gallery-next"
+                                id="alfDetailNext"
+                                aria-label="الصورة التالية"
+                                data-i18n-title="productDetail.gallery.next"
+                            >
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+
+                            <div class="alf-detail-image-counter">
+                                <span id="alfDetailCurrentImage">01</span>
+                                <span>/</span>
+                                <span id="alfDetailTotalImages">01</span>
+                            </div>
+                        </div>
+
+                        <div class="alf-detail-thumbnails" id="alfDetailThumbnails"></div>
+                    </div>
+                    <div>
+                              <div class="alf-detail-tabs">
+                <button type="button" class="active" data-tab="description" aria-selected="true">
+                    <i class="fas fa-align-right"></i>
+                    <span data-i18n="productDetail.tabs.description">وصف المنتج</span>
+                </button>
+                <button type="button" data-tab="specifications" aria-selected="false">
+                    <i class="fas fa-list-check"></i>
+                    <span data-i18n="productDetail.tabs.specifications">المواصفات</span>
+                </button>
+                <button type="button" data-tab="ordering" aria-selected="false">
+                    <i class="fas fa-truck-fast"></i>
+                    <span data-i18n="productDetail.tabs.ordering">طريقة الطلب</span>
+                </button>
+            </div>
+
+            <div class="alf-detail-tab-content active" id="alfTab-description">
+                <div class="row align-items-center g-4">
+                    <div class="col-lg-8">
+                        <span class="alf-detail-section-eyebrow" data-i18n="productDetail.description.eyebrow">
+                            تفاصيل المنتج
+                        </span>
+                        <h2>
+                            <span data-i18n="productDetail.description.headingFirst">تفاصيل تبرز</span>
+                            <span data-i18n="productDetail.description.headingHighlight">جمال التصميم</span>
+                        </h2>
+
+                        <p id="alfDetailFullDescription"></p>
+
+                        <p data-i18n="productDetail.description.paragraph">
+                            في شركة الفنان للدعاية والإعلان، نهتم بتقديم منتجات دعائية وتذكارية
+                            تتناسب مع هوية العميل وطبيعة المناسبة، مع إمكانية مناقشة
+                            المقاسات والتصميم والتفاصيل قبل التنفيذ.
+                        </p>
+
+                        <div class="alf-product-video" id="alfProductVideo" hidden>
+                            <div class="alf-product-video-heading">
+                                <div class="alf-product-video-icon">
+                                    <i class="fa-solid fa-circle-play"></i>
+                                </div>
+                                <div>
+                                    <span data-i18n="productDetail.video.eyebrow">شاهد المنتج</span>
+                                    <h3 data-i18n="productDetail.video.title">فيديو توضيحي للمنتج</h3>
+                                </div>
+                            </div>
+
+                            <div class="alf-product-video-frame" id="alfProductVideoFrame"></div>
+
+                            <a
+                                id="alfProductVideoLink"
+                                class="alf-product-video-link"
+                                href="#"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                <span data-i18n="productDetail.video.watch">مشاهدة الفيديو على المنصة</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="alf-detail-tab-content" id="alfTab-specifications">
+                <div class="alf-detail-specifications">
+                    <div>
+                        <span data-i18n="productDetail.specifications.name">اسم المنتج</span>
+                        <strong id="alfSpecName"></strong>
+                    </div>
+                    <div>
+                        <span data-i18n="productDetail.specifications.category">القسم</span>
+                        <strong id="alfSpecCategory"></strong>
+                    </div>
+                    <div>
+                        <span data-i18n="productDetail.specifications.sku">رقم المنتج</span>
+                        <strong id="alfSpecSku"></strong>
+                    </div>
+                    <div>
+                        <span data-i18n="productDetail.specifications.dimensions">المقاسات</span>
+                        <strong data-i18n="productDetail.specifications.onRequest">حسب طلب العميل</strong>
+                    </div>
+                    <div>
+                        <span data-i18n="productDetail.specifications.customization">التخصيص</span>
+                        <strong data-i18n="productDetail.specifications.customizationValue">وفق متطلبات المنتج</strong>
+                    </div>
+                    <div>
+                        <span data-i18n="productDetail.specifications.quantity">الكمية</span>
+                        <strong data-i18n="productDetail.specifications.quantityValue">حسب الطلب</strong>
+                    </div>
+                </div>
+            </div>
+
+            <div class="alf-detail-tab-content" id="alfTab-ordering">
+                <div class="alf-detail-order-steps">
+                    <div>
+                        <span>01</span>
+                        <h3 data-i18n="productDetail.steps.firstTitle">اختر المنتج</h3>
+                        <p data-i18n="productDetail.steps.firstText">
+                            راجع الصور والتفاصيل وحدد المنتج المناسب.
+                        </p>
+                    </div>
+                    <div>
+                        <span>02</span>
+                        <h3 data-i18n="productDetail.steps.secondTitle">حدد المقاسات</h3>
+                        <p data-i18n="productDetail.steps.secondText">
+                            أدخل العرض والارتفاع والكمية والملاحظات المطلوبة.
+                        </p>
+                    </div>
+                    <div>
+                        <span>03</span>
+                        <h3 data-i18n="productDetail.steps.thirdTitle">أرسل الطلب</h3>
+                        <p data-i18n="productDetail.steps.thirdText">
+                            تواصل عبر واتساب لتأكيد التفاصيل والسعر النهائي.
+                        </p>
+                    </div>
+                </div>
+            </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="alf-detail-info">
+                        <div class="alf-detail-topline">
+                            <span class="alf-detail-category" id="alfDetailCategory"></span>
+                            <span class="alf-detail-code" id="alfDetailCode"></span>
+                        </div>
+
+                        <h2 class="alf-detail-title" id="alfDetailTitle"></h2>
+
+                        <div class="alf-detail-rating">
+                            <div class="alf-detail-rating-stars" aria-hidden="true">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span data-i18n="productDetail.rating">
+                                تصميم مميز يناسب مختلف المناسبات
+                            </span>
+                        </div>
+
+                        <p class="alf-detail-short-description" id="alfDetailShortDescription"></p>
+
+                        <div class="alf-detail-price-box">
+                            <div>
+                                <span class="alf-detail-price-caption" data-i18n="productDetail.price.startsFrom">
+                                    السعر يبدأ من
+                                </span>
+                                <div class="alf-detail-price" id="alfDetailPrice"></div>
+                            </div>
+                            <div class="alf-detail-price-icon">
+                                <i class="fas fa-tag"></i>
+                            </div>
+                        </div>
+
+                        <div class="alf-detail-order-panel">
+                            <div class="alf-detail-order-heading">
+                                <div>
+                                    <span data-i18n="productDetail.order.customize">خصص طلبك</span>
+                                    <h3 data-i18n="productDetail.order.heading">مواصفات المنتج</h3>
+                                </div>
+                                <i class="fas fa-sliders"></i>
+                            </div>
+
+                        
+
+                            <label for="alfDetailNotes" class="alf-detail-notes-label">
+                                <span data-i18n="productDetail.order.notes">ملاحظات إضافية</span>
+                                <span data-i18n="productDetail.order.optional">(اختياري)</span>
+                            </label>
+
+                            <textarea
+                                id="alfDetailNotes"
+                                rows="3"
+                                data-i18n-placeholder="productDetail.order.notesPlaceholder"
+                                placeholder="مثال: طباعة شعار الشركة، كتابة اسم المكرّم، لون معين..."
+                            ></textarea>
+
+                            <a href="#" id="alfDetailWhatsapp" class="alf-detail-whatsapp">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                <span data-i18n="productDetail.order.whatsapp">اطلب المنتج عبر واتساب</span>
+                                <i class="fas fa-arrow-up-left"></i>
+                            </a>
+
+                            <div class="alf-detail-order-security">
+                                <i class="fas fa-shield-halved"></i>
+                                <span data-i18n="productDetail.order.security">
+                                    سيتم إرسال تفاصيل طلبك مباشرة إلى فريق الفنان
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="alf-detail-meta">
+                            <div>
+                                <span data-i18n="productDetail.meta.category">القسم</span>
+                                <strong id="alfDetailMetaCategory"></strong>
+                            </div>
+                            <div>
+                                <span data-i18n="productDetail.meta.sku">رقم المنتج</span>
+                                <strong id="alfDetailMetaSku"></strong>
+                            </div>
+                            <div>
+                                <span data-i18n="productDetail.meta.serviceArea">منطقة الخدمة</span>
+                                <strong data-i18n="productDetail.meta.makkah">مكة المكرمة</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <section class="alf-detail-related-section">
+        <div class="container">
+            <div class="alf-detail-related-heading">
+                <div>
+                    <span class="alf-detail-section-eyebrow" data-i18n="productDetail.related.eyebrow">
+                        قد يعجبك أيضاً
+                    </span>
+                    <h2>
+                        <span data-i18n="productDetail.related.headingFirst">منتجات</span>
+                        <span data-i18n="productDetail.related.headingHighlight">مشابهة</span>
+                    </h2>
+                    <p data-i18n="productDetail.related.description">
+                        اكتشف المزيد من منتجاتنا المميزة.
+                    </p>
+                </div>
+                <a href="products.html">
+                    <span data-i18n="productDetail.related.viewAll">عرض جميع المنتجات</span>
+                    <i class="fas fa-arrow-left"></i>
+                </a>
+            </div>
+
+            <div class="row g-4" id="alfDetailRelatedProducts"></div>
+        </div>
+    </section>
+
+    <section class="alf-detail-cta-section">
+        <div class="container">
+            <div class="alf-detail-cta">
+                <div class="alf-detail-cta-icon">
+                    <i class="fas fa-headset"></i>
+                </div>
+                <div>
+                    <span data-i18n="productDetail.cta.eyebrow">نحن هنا لمساعدتك</span>
+                    <h2 data-i18n="productDetail.cta.title">هل تحتاج إلى تصميم بمواصفات خاصة؟</h2>
+                    <p data-i18n="productDetail.cta.description">
+                        تواصل مع فريق الفنان لمناقشة فكرتك والحصول على التفاصيل المناسبة.
+                    </p>
+                </div>
+                <a href="https://wa.me/966545953908" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <span data-i18n="productDetail.cta.button">تحدث معنا</span>
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<div class="modal fade alf-detail-lightbox" id="alfDetailLightbox" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content alf-detail-lightbox-content">
+            <button
+                type="button"
+                data-bs-dismiss="modal"
+                class="alf-detail-lightbox-close"
+                aria-label="إغلاق"
+                data-i18n-title="productDetail.gallery.close"
+            >
+                <i class="fas fa-xmark"></i>
+            </button>
+            <div class="modal-body">
+                <img id="alfDetailLightboxImage" src="" alt="صورة المنتج مكبرة">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+   
+</main>
+<footer class="alf-footer" id="footer" dir="rtl">
+    <div class="alf-footer-glow alf-footer-glow-one"></div>
+    <div class="alf-footer-glow alf-footer-glow-two"></div>
+
+    <div class="container">
+
+        <div class="row g-4 alf-footer-main">
+
+            <div class="col-lg-4 col-md-6">
+                <div class="alf-footer-about">
+                    <a href="index.html" class="alf-footer-brand">
+                        <span>
+                            <img src="images/logo-2.png" height="70" alt="Al Fannan Logo">
+                            <img src="images/logo-3.png" height="70" alt="Al Fannan Logo">
+                        </span>
+                    </a>
+
+                    <p data-i18n="footer.description">
+                        في شركة الفنان، نجمع بين الخبرة والإبداع والجودة
+                        لنقدم حلولاً متكاملة في الدعاية والإعلان والطباعة
+                        الرقمية والهدايا الدعائية، ونساعد علامتك التجارية
+                        على التميز.
+                    </p>
+
+                    <div class="alf-footer-experience">
+                        <div class="alf-footer-experience-icon">
+                            <i class="fa-solid fa-award"></i>
+                        </div>
+
+                        <div>
+                            <strong data-i18n="footer.experienceTitle">
+                                +18 عاماً من الخبرة
+                            </strong>
+                            <span data-i18n="footer.experienceText">
+                                إبداع وجودة وثقة منذ البداية
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-md-6">
+                <div class="alf-footer-column">
+                    <h3 data-i18n="footer.quickLinksTitle">روابط سريعة</h3>
+
+                    <ul class="alf-footer-links">
+                        <li>
+                            <a href="index.html">
+                                <i class="fa-solid fa-angle-left"></i>
+                                <span data-i18n="footer.home">الرئيسية</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="products.html">
+                                <i class="fa-solid fa-angle-left"></i>
+                                <span data-i18n="footer.allProducts">جميع المنتجات</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="services.html">
+                                <i class="fa-solid fa-angle-left"></i>
+                                <span data-i18n="footer.services">خدماتنا</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="index.html#about">
+                                <i class="fa-solid fa-angle-left"></i>
+                                <span data-i18n="footer.about">من نحن</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="index.html#why-us">
+                                <i class="fa-solid fa-angle-left"></i>
+                                <span data-i18n="footer.whyUs">لماذا الفنان؟</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="index.html#contact">
+                                <i class="fa-solid fa-angle-left"></i>
+                                <span data-i18n="footer.contact">تواصل معنا</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="alf-footer-column">
+                    <h3 data-i18n="footer.servicesTitle">خدماتنا</h3>
+
+                    <ul class="alf-footer-links">
+                        <li>
+                            <a href="products.html">
+                                <i class="fa-solid fa-angle-left"></i>
+                                <span data-i18n="footer.promotionalGifts">الهدايا الدعائية</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="products.html">
+                                <i class="fa-solid fa-angle-left"></i>
+                                <span data-i18n="footer.paperPrinting">المطبوعات الورقية</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="products.html">
+                                <i class="fa-solid fa-angle-left"></i>
+                                <span data-i18n="footer.identityPrinting">مطبوعات الهوية</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="products.html">
+                                <i class="fa-solid fa-angle-left"></i>
+                                <span data-i18n="footer.packaging">التغليف</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="products.html">
+                                <i class="fa-solid fa-angle-left"></i>
+                                <span data-i18n="footer.signage">اللوحات الإعلانية</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="products.html">
+                                <i class="fa-solid fa-angle-left"></i>
+                                <span data-i18n="footer.design">التصميم</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="products.html">
+                                <i class="fa-solid fa-angle-left"></i>
+                                <span data-i18n="footer.dtfUv">طباعة DTF وUV</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="alf-footer-column">
+                    <h3 data-i18n="footer.contactTitle">تواصل معنا</h3>
+
+                    <div class="alf-footer-contact-list">
+
+                        <a href="tel:+966545953908" class="alf-footer-contact-item">
+                            <span class="alf-footer-contact-icon">
+                                <i class="fa-solid fa-phone-volume"></i>
+                            </span>
+
+                            <span>
+                                <small data-i18n="footer.callUs">اتصل بنا</small>
+                                <strong dir="ltr">+966 54 595 3908</strong>
+                            </span>
+                        </a>
+
+                        <a href="mailto:alfanaan.adv2@gmail.com" class="alf-footer-contact-item">
+                            <span class="alf-footer-contact-icon">
+                                <i class="fa-solid fa-envelope"></i>
+                            </span>
+
+                            <span>
+                                <small data-i18n="footer.email">البريد الإلكتروني</small>
+                                <strong dir="ltr">alfanaan.adv2@gmail.com</strong>
+                            </span>
+                        </a>
+
+                        <div class="alf-footer-contact-item">
+                            <span class="alf-footer-contact-icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </span>
+
+                            <span>
+                                <small data-i18n="footer.location">موقعنا</small>
+                                <strong data-i18n="footer.address">
+                                    مكة المكرمة - الشوقية - شارع أريكة بن شريح
+                                    بجوار جامع الصابرين
+                                </strong>
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="alf-footer-features">
+            <div class="alf-footer-feature">
+                <i class="fa-solid fa-medal"></i>
+                <span data-i18n="footer.featureQuality">جودة في التنفيذ</span>
+            </div>
+
+            <div class="alf-footer-feature">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                <span data-i18n="footer.featureCreative">تصاميم إبداعية</span>
+            </div>
+
+            <div class="alf-footer-feature">
+                <i class="fa-solid fa-handshake"></i>
+                <span data-i18n="footer.featureSupport">خدمة عملاء مميزة</span>
+            </div>
+
+            <div class="alf-footer-feature">
+                <i class="fa-solid fa-tags"></i>
+                <span data-i18n="footer.featurePrices">أسعار منافسة</span>
+            </div>
+        </div>
+
+        <div class="alf-footer-bottom">
+            <p>
+                <span data-i18n="footer.copyright">جميع الحقوق محفوظة ©</span>
+                <span id="alfFooterYear"></span>
+                <strong data-i18n="footer.companyName">
+                    شركة الفنان للدعاية والإعلان والطباعة الرقمية
+                </strong>
+            </p>
+
+            <a href="#home" class="alf-footer-backtop">
+                <span data-i18n="footer.backToTop">العودة للأعلى</span>
+                <i class="fa-solid fa-arrow-up"></i>
+            </a>
+        </div>
+
+    </div>
+</footer>
+
+            <a
+      class="whatsapp-float"
+      href="https://wa.me/966545953908"
+      target="_blank"
+      rel="noopener"
+      aria-label="تواصل عبر واتساب"
+      ><i class="fa-brands fa-whatsapp"></i
+    ></a>
+    <button class="back-to-top" id="backToTop" aria-label="العودة للأعلى">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/ScrollTrigger.min.js"></script>
+<script src="js/products-data.js"></script>
+<script src="js/index.js"></script>
+<script src="js/language.js"></script>
+<script src="js/product-details.js"></script>
+
+  </body>
+</html>

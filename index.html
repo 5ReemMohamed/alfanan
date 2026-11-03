@@ -1,0 +1,1981 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="UTF-8" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+        <link rel="stylesheet" href="css/all.min.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
+            rel="stylesheet">
+
+        <link rel="stylesheet"
+            href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+        <link rel="stylesheet" href="css/index.css" />
+    </head>
+
+    <body>
+   <div class="alf-topbar">
+    <div class="alf-topbar-container">
+
+        <div class="alf-topbar-search">
+            <i class="fas fa-search"></i>
+            <input
+                type="search"
+                id="siteSearch"
+                data-i18n-placeholder="topbar.searchPlaceholder"
+                placeholder="ابحث عن منتج أو خدمة..."
+            >
+        </div>
+
+        <div class="alf-topbar-delivery">
+            <i class="fas fa-truck-fast"></i>
+            <span data-i18n="topbar.deliveryMessage">
+                توصيل مجاني داخل مكة لأي طلب فوق
+                <strong>500 ريال</strong>
+            </span>
+        </div>
+
+        <button class="alf-theme-toggle" id="themeToggle" aria-label="Change theme">
+            <i class="fas fa-moon"></i>
+        </button>
+
+    </div>
+</div>     
+<div class="language-switcher" id="languageSwitcher">
+    <button
+        class="language-switcher-btn"
+        id="languageSwitcherBtn"
+        type="button"
+        aria-label="Change language"
+        aria-expanded="false"
+        aria-controls="languageSwitcherMenu"
+    >
+        <span class="language-current-flag" id="currentLangFlag">🇸🇦</span>
+        <span class="language-current-code" id="currentLangCode">AR</span>
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+    <div class="language-switcher-menu" id="languageSwitcherMenu">
+        <button type="button" class="language-option active" data-lang="ar">
+            <span>🇸🇦</span>
+            <span>العربية</span>
+            <i class="fa-solid fa-check"></i>
+        </button>
+
+        <button type="button" class="language-option" data-lang="en">
+            <span>🇺🇸</span>
+            <span>English</span>
+            <i class="fa-solid fa-check"></i>
+        </button>
+    </div>
+</div>
+
+ 
+<header class="site-header">
+    <div class="header-inner">
+
+        <a href="#home" class="d-flex flex-row"
+           aria-label="الفنّان الرئيسية">
+            <img src="images/logo-2.png" height="40" alt="">
+            <img src="images/logo-3.png" height="40" alt="">
+        </a>
+
+        <button class="mobile-toggle" id="mobileToggle"
+                aria-label="فتح القائمة" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+      <nav class="main-nav" id="mainNav">
+    <a href="#home" class="nav-link">
+        <span data-i18n="nav.home">الرئيسية</span>
+    </a>
+
+    <div id="navCategories"></div>
+
+    <a href="products.html" class="nav-link">
+        <span data-i18n="nav.marketing">التسويق والبرمجه</span>
+    </a>
+</nav>
+    </div>
+</header>
+
+            <main>
+        
+<section class="hero" id="home" aria-label="مقدمة الشركة" data-i18n-aria-label="hero.ariaLabel">
+
+    <div class="hero-slides">
+        <div class="hero-slide active"
+            style="--hero-image: url('/images/7.jpg');">
+        </div>
+
+        <div class="hero-slide"
+            style="--hero-image: url('/images/8.jpg');">
+        </div>
+
+    </div>
+
+    <div class="hero-overlay"></div>
+    <div class="hero-ornament hero-ornament-one"></div>
+    <div class="hero-ornament hero-ornament-two"></div>
+
+    <div class="container hero-container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-xl-8">
+                <div class="hero-content">
+
+                    <div class="img mb-4">
+                        <img src="images/logo-3.png" height="100" alt="شركة الفنان">
+                    </div>
+
+                    <span class="eyebrow hero-eyebrow">
+                        <span class="first-span"></span>
+                        <span data-i18n="hero.subtitle">
+                            شركة للدعاية والإعلان والطباعة الرقمية
+                        </span>
+                    </span>
+
+                    <h1 class="hero-title">
+                        <span class="first-span-hero" data-i18n="hero.titleFirst">إبداع</span>
+                        <span data-i18n="hero.titleHighlight">يحقق رؤيتك</span>
+                    </h1>
+
+                    <p class="hero-description" data-i18n="hero.description">
+                        نتميز بفريق متخصص على أعلى مستوى وبخبرة تزيد
+                        عن 18 عاماً بمكة المكرمة، ونقدم حلولاً إبداعية
+                        في تصميم الهوية البصرية والطباعة واللوحات
+                        الإعلانية والتسويق.
+                    </p>
+
+                    <div class="hero-actions">
+
+                        <a href="services.html" class="btn-gold">
+                            <span data-i18n="hero.servicesBtn">
+                                تعرّف على خدماتنا
+                            </span>
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </a>
+
+                        <a href="https://wa.me/966545953908"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="btn-outline-gold">
+                            <i class="fa-solid fa-phone"></i>
+                            <span data-i18n="hero.contactBtn">
+                                تواصل معنا
+                            </span>
+                        </a>
+
+                        <a href="https://drive.google.com/uc?export=download&id=1adtDDVwI5f0lPha_O6LOsXpAw7ySlot_"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="btn-outline-gold btn-profile-download">
+                            <i class="fa-solid fa-file-arrow-down"></i>
+                            <span data-i18n="hero.profileBtn">
+                                تحميل بروفايل الشركة
+                            </span>
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero-bottom container-fluid">
+        <div class="slider-controls">
+
+            <button
+                class="slider-arrow"
+                id="prevSlide"
+                aria-label="الشريحة السابقة"
+                data-i18n-aria-label="hero.previousSlide">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+
+            <span class="slide-number">
+                <b id="currentSlide">01</b>
+                <span>/</span>
+                <span>03</span>
+            </span>
+
+            <div class="slide-progress">
+                <span id="slideProgress"></span>
+            </div>
+
+            <button
+                class="slider-arrow"
+                id="nextSlide"
+                aria-label="الشريحة التالية"
+                data-i18n-aria-label="hero.nextSlide">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+
+        </div>
+
+        <a class="scroll-cue" href="#about">
+            <span class="scroll-mouse"><i></i></span>
+            <span data-i18n="hero.scroll">Scroll</span>
+        </a>
+    </div>
+
+    <div class="hero-dots"
+         aria-label="اختيار الشريحة"
+         data-i18n-aria-label="hero.selectSlide">
+
+        <button
+            class="hero-dot active"
+            data-slide="0"
+            aria-label="الشريحة الأولى"
+            data-i18n-aria-label="hero.slideOne">
+        </button>
+
+        <button
+            class="hero-dot"
+            data-slide="1"
+            aria-label="الشريحة الثانية"
+            data-i18n-aria-label="hero.slideTwo">
+        </button>
+
+        <button
+            class="hero-dot"
+            data-slide="2"
+            aria-label="الشريحة الثالثة"
+            data-i18n-aria-label="hero.slideThree">
+        </button>
+
+    </div>
+
+</section>
+
+          
+<section class="alf-about-section" id="about" dir="rtl">
+    <div class="container-fluid alf-about-container">
+        <div class="row align-items-center g-0">
+
+            <div class="col-lg-6 alf-about-content-col">
+                <div class="alf-about-content">
+
+                    <div data-aos="fade-up">
+                        <img src="images/logo-3.png" height="100" alt="Al Fannan">
+                    </div>
+
+                    <div class="alf-about-eyebrow" data-aos="fade-up">
+                        <span data-i18n="about.eyebrow">من نحن</span>
+                        <span class="alf-about-eyebrow-line"></span>
+                    </div>
+
+                    <h2 class="alf-about-title"
+                        data-aos="fade-up"
+                        data-aos-delay="100">
+                        <span data-i18n="about.titleFirst">
+                            شركة الفنان للدعاية والإعلان
+                        </span>
+                        <span class="about-highlight" data-i18n="about.titleHighlight">
+                            والطباعة الرقمية
+                        </span>
+                    </h2>
+
+                    <div class="alf-about-description"
+                         data-aos="fade-up"
+                         data-aos-delay="150">
+
+                        <p data-i18n="about.descriptionOne">
+                            تتميز شركة الفنان للدعاية والإعلان والطباعة الرقمية
+                            بتقديم خدمات متكاملة في مجال الدعاية والإعلان والطباعة
+                            الرقمية وتصميم وتنفيذ اللوحات الإعلانية وطباعة الهدايا
+                            التذكارية، مع الحرص الدائم على تقديم كل ما هو جديد
+                            ومميز في هذا المجال.
+                        </p>
+
+                        <p>
+                            <span data-i18n="about.descriptionTwoStart">
+                                بخبرة تزيد عن
+                            </span>
+                            <strong data-i18n="about.experienceYears">
+                                18 عاماً
+                            </strong>
+                            <span data-i18n="about.descriptionTwoEnd">
+                                في مكة المكرمة، نعمل على تقديم حلول إبداعية تلبي
+                                احتياجات عملائنا، بدءاً من تصميم الهوية البصرية
+                                والطباعة الداخلية والخارجية، مروراً بالبنرات
+                                والاستيكرات واللوحات المضيئة والكلادينج، وصولاً
+                                إلى الدروع التذكارية والهدايا وقص الليزر وتركيب
+                                استيكرات الجدران والسيارات.
+                            </span>
+                        </p>
+
+                    </div>
+
+                    <div class="alf-about-features"
+                         data-aos="fade-up"
+                         data-aos-delay="200">
+
+                        <div class="alf-about-feature">
+                            <div class="alf-about-feature-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3 data-i18n="about.featureTeamTitle">
+                                فريق متخصص
+                            </h3>
+                            <p data-i18n="about.featureTeamText">
+                                على أعلى مستوى
+                            </p>
+                        </div>
+
+                        <div class="alf-about-feature">
+                            <div class="alf-about-feature-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <h3 data-i18n="about.featureExperienceTitle">
+                                خبرة تزيد عن
+                            </h3>
+                            <p class="alf-about-feature-highlight"
+                               data-i18n="about.experienceYears">
+                                18 عاماً
+                            </p>
+                        </div>
+
+                        <div class="alf-about-feature">
+                            <div class="alf-about-feature-icon">
+                                <i class="fas fa-location-dot"></i>
+                            </div>
+                            <h3 data-i18n="about.featureLocationTitle">
+                                مكة المكرمة
+                            </h3>
+                            <p data-i18n="about.featureLocationText">
+                                نخدم أعمالكم باحتراف
+                            </p>
+                        </div>
+
+                        <div class="alf-about-feature">
+                            <div class="alf-about-feature-icon">
+                                <i class="far fa-gem"></i>
+                            </div>
+                            <h3 data-i18n="about.featureQualityTitle">
+                                جودة عالية
+                            </h3>
+                            <p data-i18n="about.featureQualityText">
+                                في كل التفاصيل
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="alf-about-promise"
+                         data-aos="fade-up"
+                         data-aos-delay="250">
+
+                        <div class="alf-about-promise-content">
+                            <span data-i18n="about.promiseEyebrow">
+                                كن مطمئناً دوماً
+                            </span>
+                            <h3 data-i18n="about.promiseTitle">
+                                نهتم بالتفاصيل لنقدم لكم الأفضل
+                            </h3>
+                        </div>
+
+                        <div class="alf-about-promise-divider"></div>
+
+                        <div class="alf-about-promise-icon">
+                            <i class="fas fa-shield-halved"></i>
+                        </div>
+
+                        <div class="alf-about-promise-decoration"></div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-lg-6 alf-about-image-col">
+                <div class="alf-about-visual"
+                     data-aos="fade-right"
+                     data-aos-duration="1100">
+
+                    <div class="alf-about-visual-bg"></div>
+                    <div class="alf-about-visual-outline"></div>
+
+                    <div class="alf-about-image-wrapper">
+                        <img
+                            src="images/about.png"
+                            alt="شركة الفنان للدعاية والإعلان والطباعة الرقمية"
+                            data-i18n-alt="about.imageAlt"
+                            loading="lazy">
+                    </div>
+
+                    <div class="alf-about-experience">
+                        <strong>18+</strong>
+                        <span data-i18n="about.experienceLabel">
+                            عاماً من الخبرة
+                        </span>
+                        <small data-i18n="about.experienceLocation">
+                            في مكة المكرمة
+                        </small>
+                    </div>
+
+                    <div class="alf-about-visual-dots">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+          
+<section class="alf-vm-section" id="vision" dir="rtl">
+    <div class="alf-vm-layout">
+        <div class="alf-vm-visual">
+            <div class="alf-vm-visual-image"></div>
+        </div>
+
+        <div class="alf-vm-content">
+            <div class="alf-vm-heading">
+                <div class="alf-vm-eyebrow">
+                    <span></span>
+                    <strong data-i18n="vision.eyebrow">رؤيتنا ورسالتنا</strong>
+                    <span></span>
+                </div>
+
+                <h2>
+                    <span class="about-highlight" data-i18n="vision.titleFirst">نصنع الفرق</span>
+                    <span data-i18n="vision.titleHighlight">بالفكرة والجودة والإبداع</span>
+                </h2>
+
+                <p data-i18n="vision.description">
+                    نؤمن أن النجاح يبدأ من فهم احتياجات عملائنا،
+                    والاهتمام بالتفاصيل، وتقديم حلول إعلانية وطباعة رقمية
+                    تجمع بين الجودة والتميز.
+                </p>
+            </div>
+
+            <div class="alf-vm-cards">
+
+                <article class="alf-vm-card alf-vm-vision">
+                    <span class="alf-vm-card-number">02</span>
+
+                    <div class="alf-vm-card-header">
+                        <div class="alf-vm-card-icon">
+                            <i class="fa-regular fa-eye"></i>
+                        </div>
+                        <span data-i18n="vision.visionLabel">رؤيتنا وأهدافنا</span>
+                    </div>
+
+                    <h3>
+                        <span data-i18n="vision.visionTitleFirst">نحو مستقبل</span>
+                        <span data-i18n="vision.visionTitleHighlight">أكثر تميزاً</span>
+                    </h3>
+
+                    <p data-i18n="vision.visionDescription">
+                        نطمح إلى الحصول على مركز متميز بين منافسينا،
+                        من خلال التطوير المستمر وتوظيف خبراتنا وإمكاناتنا
+                        لتقديم خدمات إعلانية وطباعة رقمية ترتقي إلى
+                        تطلعات السوق السعودي.
+                    </p>
+
+                    <div class="alf-vm-goals">
+                        <div class="alf-vm-goal">
+                            <span class="alf-vm-goal-icon">
+                                <i class="fa-solid fa-gear"></i>
+                            </span>
+                            <span data-i18n="vision.goalOne">
+                                تطوير خدماتنا ومواكبة أحدث التقنيات.
+                            </span>
+                        </div>
+
+                        <div class="alf-vm-goal">
+                            <span class="alf-vm-goal-icon">
+                                <i class="fa-solid fa-users"></i>
+                            </span>
+                            <span data-i18n="vision.goalTwo">
+                                تحقيق رضا العملاء وبناء علاقات طويلة الأمد.
+                            </span>
+                        </div>
+
+                        <div class="alf-vm-goal">
+                            <span class="alf-vm-goal-icon">
+                                <i class="fa-solid fa-chart-line"></i>
+                            </span>
+                            <span data-i18n="vision.goalThree">
+                                تقديم جودة عالية بأسعار منافسة.
+                            </span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="alf-vm-card alf-vm-message">
+                    <span class="alf-vm-card-number">01</span>
+
+                    <div class="alf-vm-card-header">
+                        <div class="alf-vm-card-icon">
+                            <i class="fa-solid fa-bullseye"></i>
+                        </div>
+                        <span data-i18n="vision.missionLabel">رسالتنا</span>
+                    </div>
+
+                    <h3>
+                        <span data-i18n="vision.missionTitleFirst">خبرة تتطور</span>
+                        <span data-i18n="vision.missionTitleHighlight">وتقنيات تصنع الفرق</span>
+                    </h3>
+
+                    <p data-i18n="vision.missionDescription">
+                        نسعى في شركة الفنان للدعاية والإعلان والطباعة الرقمية
+                        إلى تقديم حلول إبداعية متكاملة، مع الاهتمام بأدق
+                        الأمور والتفاصيل التي تصنع الفارق وتحقق رضا عملائنا.
+                    </p>
+
+                    <div class="alf-vm-message-highlight">
+                        <div class="alf-vm-diamond">
+                            <i class="fa-regular fa-gem"></i>
+                        </div>
+
+                        <div>
+                            <strong data-i18n="vision.missionHighlightTitle">
+                                الجودة والسرعة والسعر المنافس
+                            </strong>
+                            <p data-i18n="vision.missionHighlightDescription">
+                                مع الالتزام بتقديم أعمال تليق بطموحات عملائنا.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+         
+<section class="alf-services-section" id="services" dir="rtl">
+    <div class="container">
+
+        <div class="alf-services-heading">
+            <div class="alf-services-heading-content">
+
+                <span class="alf-services-eyebrow">
+                    <i class="fa-solid fa-layer-group"></i>
+                    <span data-i18n="services.eyebrow">
+                        خدماتنا ومنتجاتنا
+                    </span>
+                </span>
+
+                <h2>
+                    <span class="about-highlight" data-i18n="services.titleFirst">
+                        اكتشف خدماتنا
+                    </span>
+                    <span data-i18n="services.titleHighlight">
+                        واختر ما يناسب احتياجك
+                    </span>
+                </h2>
+
+                <p data-i18n="services.description">
+                    مجموعة متكاملة من خدمات الدعاية والإعلان
+                    والطباعة الرقمية، اختر القسم المناسب واستعرض
+                    المنتجات والتصاميم المتاحة.
+                </p>
+            </div>
+
+            <a href="services.html" class="alf-services-all-btn">
+                <span data-i18n="services.viewAll">
+                    عرض جميع الخدمات
+                </span>
+                <i class="fa-solid fa-arrow-left"></i>
+            </a>
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-lg-6"
+                 data-aos="fade-up"
+                 data-aos-delay="50">
+
+                <a href="products.html?category=promotional-gifts"
+                   class="alf-service-card">
+
+                    <div class="alf-service-icon">
+                        <i class="fa-solid fa-gift"></i>
+                    </div>
+
+                    <div class="alf-service-content">
+                        <h3 data-i18n="services.giftsTitle">
+                            الهدايا الدعائية
+                        </h3>
+
+                        <p data-i18n="services.giftsDescription">
+                            هدايا مميزة للشركات والمناسبات تحمل
+                            هوية علامتك التجارية بأسلوب احترافي.
+                        </p>
+                    </div>
+
+                    <span class="alf-service-arrow">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </span>
+
+                </a>
+            </div>
+
+            <div class="col-lg-6"
+                 data-aos="fade-up"
+                 data-aos-delay="100">
+
+                <a href="products.html?category=paper-printing"
+                   class="alf-service-card">
+
+                    <div class="alf-service-icon">
+                        <i class="fa-solid fa-print"></i>
+                    </div>
+
+                    <div class="alf-service-content">
+                        <h3 data-i18n="services.paperTitle">
+                            المطبوعات الورقية
+                        </h3>
+
+                        <p data-i18n="services.paperDescription">
+                            بروشورات وفلايرات وكتيبات ومطبوعات
+                            ورقية بجودة عالية وتشطيبات مميزة.
+                        </p>
+                    </div>
+
+                    <span class="alf-service-arrow">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </span>
+
+                </a>
+            </div>
+
+            <div class="col-lg-6"
+                 data-aos="fade-up"
+                 data-aos-delay="150">
+
+                <a href="products.html?category=identity-printing"
+                   class="alf-service-card">
+
+                    <div class="alf-service-icon">
+                        <i class="fa-solid fa-id-card"></i>
+                    </div>
+
+                    <div class="alf-service-content">
+                        <h3 data-i18n="services.identityTitle">
+                            مطبوعات الهوية
+                        </h3>
+
+                        <p data-i18n="services.identityDescription">
+                            كروت شخصية وأوراق مراسلات وأظرف
+                            تعكس هوية مشروعك بصورة احترافية.
+                        </p>
+                    </div>
+
+                    <span class="alf-service-arrow">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </span>
+
+                </a>
+            </div>
+
+            <div class="col-lg-6"
+                 data-aos="fade-up"
+                 data-aos-delay="200">
+
+                <a href="products.html?category=packaging"
+                   class="alf-service-card">
+
+                    <div class="alf-service-icon">
+                        <i class="fa-solid fa-box-open"></i>
+                    </div>
+
+                    <div class="alf-service-content">
+                        <h3 data-i18n="services.packagingTitle">
+                            التغليف
+                        </h3>
+
+                        <p data-i18n="services.packagingDescription">
+                            علب وحقائب وبوكسات بتصاميم مبتكرة
+                            تمنح منتجاتك مظهراً مميزاً.
+                        </p>
+                    </div>
+
+                    <span class="alf-service-arrow">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </span>
+
+                </a>
+            </div>
+
+        </div>
+
+        <div class="alf-services-footer">
+
+            <span>
+                <i class="fa-solid fa-circle-check"></i>
+                <span data-i18n="services.footerText">
+                    خدمات متكاملة تناسب الأفراد والشركات
+                </span>
+            </span>
+
+            <a href="services.html">
+                <span data-i18n="services.footerLink">
+                    اكتشف جميع خدماتنا
+                </span>
+                <i class="fa-solid fa-arrow-left"></i>
+            </a>
+
+        </div>
+
+    </div>
+</section>
+
+           
+<section class="alf-why-section" id="why-us" dir="rtl">
+    <div class="alf-why-bg"></div>
+    <div class="alf-why-overlay"></div>
+    <div class="alf-why-noise"></div>
+
+    <div class="alf-why-curve alf-why-curve-right"></div>
+    <div class="alf-why-curve alf-why-curve-left"></div>
+
+    <div class="container alf-why-container">
+
+        <div class="alf-why-heading" data-aos="fade-up">
+            <div class="alf-why-eyebrow">
+                <span class="alf-why-eyebrow-line"></span>
+
+                <span class="alf-why-eyebrow-text">
+                    <i class="fa-solid fa-award"></i>
+                    <span data-i18n="why.eyebrow">
+                        لماذا شركة الفنان؟
+                    </span>
+                </span>
+
+                <span class="alf-why-eyebrow-line"></span>
+            </div>
+
+            <h2>
+                <span data-i18n="why.titleFirst">
+                    نصنع الفرق في عالم
+                </span>
+                <span data-i18n="why.titleHighlight">
+                    الدعاية والإعلان
+                </span>
+            </h2>
+
+            <p data-i18n="why.description">
+                نجمع بين الخبرة والإبداع وأحدث تقنيات التنفيذ لنقدم
+                حلولاً إعلانية متكاملة تساعد علامتك التجارية على
+                التميز والظهور بصورة تليق بها.
+            </p>
+        </div>
+
+        <div class="row g-4 alf-why-grid">
+
+            <div class="col-lg-3 col-md-6"
+                 data-aos="fade-up"
+                 data-aos-delay="50">
+
+                <article class="alf-why-card">
+                    <span class="alf-why-number">01</span>
+
+                    <div class="alf-why-icon">
+                        <i class="fa-solid fa-users"></i>
+                        <span class="alf-why-icon-star">
+                            <i class="fa-solid fa-star"></i>
+                        </span>
+                    </div>
+
+                    <h3 data-i18n="why.cardOneTitle">
+                        خبرة تتجاوز 18 عامًا
+                    </h3>
+
+                    <p data-i18n="why.cardOneDescription">
+                        خبرة طويلة في مجال الدعاية والإعلان تمنحنا
+                        القدرة على فهم احتياجات عملائنا وتحويل
+                        أفكارهم إلى نتائج مميزة.
+                    </p>
+
+                    <span class="alf-why-card-line"></span>
+                </article>
+            </div>
+
+            <div class="col-lg-3 col-md-6"
+                 data-aos="fade-up"
+                 data-aos-delay="100">
+
+                <article class="alf-why-card">
+                    <span class="alf-why-number">02</span>
+
+                    <div class="alf-why-icon">
+                        <i class="fa-regular fa-lightbulb"></i>
+                    </div>
+
+                    <h3 data-i18n="why.cardTwoTitle">
+                        إبداع وهوية مميزة
+                    </h3>
+
+                    <p data-i18n="why.cardTwoDescription">
+                        نصمم هويات بصرية وحلولًا إعلانية تعكس
+                        شخصية نشاطك التجاري وتساعد علامتك
+                        على ترسيخ حضورها.
+                    </p>
+
+                    <span class="alf-why-card-line"></span>
+                </article>
+            </div>
+
+            <div class="col-lg-3 col-md-6"
+                 data-aos="fade-up"
+                 data-aos-delay="150">
+
+                <article class="alf-why-card">
+                    <span class="alf-why-number">03</span>
+
+                    <div class="alf-why-icon">
+                        <i class="fa-solid fa-layer-group"></i>
+                    </div>
+
+                    <h3 data-i18n="why.cardThreeTitle">
+                        حلول متكاملة في مكان واحد
+                    </h3>
+
+                    <p data-i18n="why.cardThreeDescription">
+                        من التصميم والطباعة إلى اللوحات الإعلانية
+                        والهدايا والدروع والقص بالليزر،
+                        نوفر لك خيارات متنوعة.
+                    </p>
+
+                    <span class="alf-why-card-line"></span>
+                </article>
+            </div>
+
+            <div class="col-lg-3 col-md-6"
+                 data-aos="fade-up"
+                 data-aos-delay="200">
+
+                <article class="alf-why-card">
+                    <span class="alf-why-number">04</span>
+
+                    <div class="alf-why-icon">
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+
+                    <h3 data-i18n="why.cardFourTitle">
+                        جودة واهتمام بالتفاصيل
+                    </h3>
+
+                    <p data-i18n="why.cardFourDescription">
+                        نهتم بجودة الخامات ودقة التنفيذ
+                        والتفاصيل النهائية لنقدم أعمالًا
+                        تعكس احترافية علامتك التجارية.
+                    </p>
+
+                    <span class="alf-why-card-line"></span>
+                </article>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<section class="alf-pricing" id="packages">
+    <div class="alf-pricing-container">
+
+        <div class="alf-pricing-heading" data-aos="fade-up">
+            <span class="alf-pricing-eyebrow">
+                <i class="fas fa-gift"></i>
+                <span data-i18n="pricing.eyebrow">باقات وعروض خاصة</span>
+            </span>
+
+            <h2 data-i18n="pricing.title">
+                باقاتنا وعروضنا المميزة
+            </h2>
+
+            <p data-i18n="pricing.description">
+                اختر الباقة المناسبة لاحتياجاتك واستفد من حلول متكاملة تجمع بين الجودة والإبداع وأفضل الأسعار.
+            </p>
+
+            <div class="alf-pricing-divider">
+                <span></span>
+                <i class="fas fa-star"></i>
+                <span></span>
+            </div>
+        </div>
+
+        <div class="alf-pricing-grid">
+
+            <!-- Package 1 -->
+            <article class="alf-package-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="alf-package-icon">
+                    <i class="fas fa-rocket"></i>
+                </div>
+
+                <span class="alf-package-badge" data-i18n="pricing.packages.launch.badge">
+                    وفر 15%
+                </span>
+
+                <div class="alf-package-content">
+                    <h3 data-i18n="pricing.packages.launch.name">باقة الانطلاقة</h3>
+
+                    <p class="alf-package-description" data-i18n="pricing.packages.launch.description">
+                        مثالية للمشاريع الناشئة لبدء نشاطك بكفاءة واحترافية.
+                    </p>
+
+                    <div class="alf-package-price">
+                        <span class="alf-price-currency" data-i18n="pricing.currency">ر.س</span>
+                        <strong>1,000</strong>
+                    </div>
+
+                    <div class="alf-package-separator"></div>
+
+                    <ul class="alf-package-features">
+                        <li><i class="fas fa-check"></i><span data-i18n="pricing.packages.launch.features.0">تصميم شعار احترافي</span></li>
+                        <li><i class="fas fa-check"></i><span data-i18n="pricing.packages.launch.features.1">1000 كرت شخصية فاخر</span></li>
+                        <li><i class="fas fa-check"></i><span data-i18n="pricing.packages.launch.features.2">1000 فلاير A5</span></li>
+                        <li><i class="fas fa-check"></i><span data-i18n="pricing.packages.launch.features.3">رول أب بانر 85×200</span></li>
+                        <li><i class="fas fa-check"></i><span data-i18n="pricing.packages.launch.features.4">أظرف وورق رسمي مطبوع</span></li>
+                    </ul>
+
+                   <a href="https://wa.me/966545953908?text=مرحباً شركة الفنان، أرغب في طلب باقة الانطلاقة بسعر 1000 ر.س"
+   class="alf-package-btn"
+   target="_blank"
+   rel="noopener noreferrer">
+
+    <span data-i18n="pricing.orderButton">اطلب الباقة عبر واتساب</span>
+    <i class="fab fa-whatsapp"></i>
+</a>
+                </div>
+            </article>
+
+            <!-- Package 2 -->
+            <article class="alf-package-card alf-package-featured" data-aos="fade-up" data-aos-delay="200">
+                <div class="alf-package-icon">
+                    <i class="fas fa-gem"></i>
+                </div>
+
+                <span class="alf-package-badge">
+                    <i class="fas fa-crown"></i>
+                    <span data-i18n="pricing.packages.identity.badge">الأكثر طلبًا</span>
+                </span>
+
+                <div class="alf-package-content">
+                    <h3 data-i18n="pricing.packages.identity.name">باقة الهوية الذهبية</h3>
+
+                    <p class="alf-package-description" data-i18n="pricing.packages.identity.description">
+                        الاختيار الأمثل لبناء هوية تجارية شاملة باحتراف.
+                    </p>
+
+                    <div class="alf-package-price">
+                        <span class="alf-price-currency" data-i18n="pricing.currency">ر.س</span>
+                        <strong>1,899</strong>
+                    </div>
+
+                    <div class="alf-package-separator"></div>
+
+                    <ul class="alf-package-features">
+                        <li><i class="fas fa-check"></i><span data-i18n="pricing.packages.identity.features.0">هوية تجارية كاملة + دليل إرشادي</span></li>
+                        <li><i class="fas fa-check"></i><span data-i18n="pricing.packages.identity.features.1">2000 كرت شخصية مع تصميم</span></li>
+                        <li><i class="fas fa-check"></i><span data-i18n="pricing.packages.identity.features.2">2500 فلاير أو بروشور A4</span></li>
+                        <li><i class="fas fa-check"></i><span data-i18n="pricing.packages.identity.features.3">حرف بارز LED لمقر شركتك (60 سم)</span></li>
+                        <li><i class="fas fa-check"></i><span data-i18n="pricing.packages.identity.features.4">100 كيس ورقي فاخر مطبوع</span></li>
+                        <li><i class="fas fa-check"></i><span data-i18n="pricing.packages.identity.features.5">ختم أوتوماتيكي + إحداثات أسماء</span></li>
+                    </ul>
+
+                   <a href="https://wa.me/966545953908?text=مرحباً شركة الفنان، أرغب في طلب باقة الهوية الذهبية بسعر 1899 ر.س"
+   class="alf-package-btn"
+   target="_blank"
+   rel="noopener noreferrer">
+
+    <span data-i18n="pricing.orderButton">اطلب الباقة عبر واتساب</span>
+    <i class="fab fa-whatsapp"></i>
+</a>
+                </div>
+            </article>
+
+            <!-- Package 3 -->
+            <article class="alf-package-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="alf-package-icon">
+                    <i class="fas fa-building"></i>
+                </div>
+
+                <span class="alf-package-badge" data-i18n="pricing.packages.business.badge">
+                    وفر 25%
+                </span>
+
+                <div class="alf-package-content">
+                    <h3 data-i18n="pricing.packages.business.name">باقة المؤسسات</h3>
+
+                    <p class="alf-package-description" data-i18n="pricing.packages.business.description">
+                        حلول متكاملة للشركات والمؤسسات الكبرى.
+                    </p>
+
+                    <div class="alf-package-price">
+                        <span class="alf-price-currency" data-i18n="pricing.currency">ر.س</span>
+                        <strong>3,999</strong>
+                    </div>
+
+                    <div class="alf-package-separator"></div>
+
+                    <ul class="alf-package-features">
+                        <li><i class="fas fa-check"></i><span data-i18n="pricing.packages.business.features.0">هوية تجارية + دليل إرشادي كامل</span></li>
+                        <li><i class="fas fa-check"></i><span data-i18n="pricing.packages.business.features.1">5000 كرت شخصية فاخر</span></li>
+                        <li><i class="fas fa-check"></i><span data-i18n="pricing.packages.business.features.2">10000 فلاير A5</span></li>
+                        <li><i class="fas fa-check"></i><span data-i18n="pricing.packages.business.features.3">2 رول أب بانر إعلاني</span></li>
+                        <li><i class="fas fa-check"></i><span data-i18n="pricing.packages.business.features.4">200 تيشيرت موحد مطبوع</span></li>
+                        <li><i class="fas fa-check"></i><span data-i18n="pricing.packages.business.features.5">500 هدية دعائية (أكواب + أقلام)</span></li>
+                        <li><i class="fas fa-check"></i><span data-i18n="pricing.packages.business.features.6">شهر إدارة سوشيال ميديا مجانًا</span></li>
+                    </ul>
+
+                    <a href="https://wa.me/966545953908?text=مرحباً شركة الفنان، أرغب في طلب باقة المؤسسات بسعر 3999 ر.س"
+   class="alf-package-btn"
+   target="_blank"
+   rel="noopener noreferrer">
+
+    <span data-i18n="pricing.orderButton">اطلب الباقة عبر واتساب</span>
+    <i class="fab fa-whatsapp"></i>
+</a>
+                </div>
+            </article>
+
+            <!-- Package 4 -->
+            <article class="alf-package-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="alf-package-icon">
+                    <i class="fas fa-gift"></i>
+                </div>
+
+                <span class="alf-package-badge" data-i18n="pricing.packages.events.badge">
+                    لفترة محدودة
+                </span>
+
+                <div class="alf-package-content">
+                    <h3 data-i18n="pricing.packages.events.name">باقة المناسبات</h3>
+
+                    <p class="alf-package-description" data-i18n="pricing.packages.events.description">
+                        كل ما تحتاجه للعيد والتخرج واليوم الوطني.
+                    </p>
+
+                    <div class="alf-package-price">
+                        <span class="alf-price-currency" data-i18n="pricing.currency">ر.س</span>
+                        <strong>1,499</strong>
+                    </div>
+
+                    <div class="alf-package-separator"></div>
+
+                    <ul class="alf-package-features">
+                        <li><i class="fas fa-check"></i><span data-i18n="pricing.packages.events.features.0">300 باقة هدايا موسمية مخصصة</span></li>
+                        <li><i class="fas fa-check"></i><span data-i18n="pricing.packages.events.features.1">500 ستيكر وملصقات مناسبة</span></li>
+                        <li><i class="fas fa-check"></i><span data-i18n="pricing.packages.events.features.2">بنر ترويجي 1×3 متر</span></li>
+                        <li><i class="fas fa-check"></i><span data-i18n="pricing.packages.events.features.3">تصميم بوستات المناسبة (6 منشورات)</span></li>
+                        <li><i class="fas fa-check"></i><span data-i18n="pricing.packages.events.features.4">تغليف وأكياس مطبوعة</span></li>
+                    </ul>
+
+                    <a href="https://wa.me/966545953908?text=مرحباً شركة الفنان، أرغب في طلب باقة المناسبات بسعر 1499 ر.س"
+   class="alf-package-btn"
+   target="_blank"
+   rel="noopener noreferrer">
+
+    <span data-i18n="pricing.orderButton">اطلب الباقة عبر واتساب</span>
+    <i class="fab fa-whatsapp"></i>
+</a>
+                </div>
+            </article>
+
+        </div>
+
+        <div class="alf-pricing-footer" data-aos="fade-up">
+            <div class="alf-pricing-footer-icon">
+                <i class="fas fa-headset"></i>
+            </div>
+
+            <div class="alf-pricing-footer-text">
+                <h4 data-i18n="pricing.footerTitle">تحتاج باقة بتصميم خاص؟</h4>
+                <p data-i18n="pricing.footerDescription">
+                    تواصل معنا وسنساعدك في اختيار الحل الأنسب لاحتياجات مشروعك.
+                </p>
+            </div>
+
+            <a href="https://wa.me/966545953908" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-whatsapp"></i>
+                <span data-i18n="pricing.footerButton">تحدث مع فريقنا</span>
+            </a>
+        </div>
+
+    </div>
+</section>
+   
+<section class="alf-testimonials" id="testimonials">
+    <div class="container">
+
+        <div class="alf-testimonials-heading" data-aos="fade-up">
+            <span class="alf-testimonials-eyebrow">
+                <i class="fas fa-comments"></i>
+                <span data-i18n="testimonials.eyebrow">آراء عملائنا</span>
+            </span>
+
+            <h2 data-i18n="testimonials.title">
+                ماذا يقول عملاؤنا عن الفنان؟
+            </h2>
+
+            <p data-i18n="testimonials.description">
+                رضا عملائنا هو أكبر دليل على جودة خدماتنا وحرصنا الدائم على تقديم الأفضل.
+            </p>
+        </div>
+
+        <div class="alf-testimonials-rating" data-aos="fade-up">
+            <div class="alf-rating-number">
+                <strong>5.0</strong>
+                <div class="alf-rating-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <span data-i18n="testimonials.ratingLabel">تجربة عملاء مميزة</span>
+            </div>
+
+            <div class="alf-rating-divider"></div>
+
+            <div class="alf-rating-text">
+                <strong data-i18n="testimonials.ratingTitle">نضع رضاك في المقدمة</strong>
+                <span data-i18n="testimonials.ratingDescription">
+                    نحرص على الجودة والدقة والالتزام في كل مشروع.
+                </span>
+            </div>
+        </div>
+
+        <div class="alf-testimonials-slider" data-aos="fade-up">
+            <div class="alf-testimonials-track" id="alfTestimonialsTrack">
+
+                <article class="alf-testimonial-card">
+                    <div class="alf-testimonial-top">
+                        <div class="alf-testimonial-quote">
+                            <i class="fas fa-quote-right"></i>
+                        </div>
+                        <div class="alf-testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+
+                    <p data-i18n="testimonials.review1">
+                        تجربة رائعة في التعامل وجودة الطباعة ممتازة، والتصميم والتنفيذ كانا على مستوى التوقعات. شكراً لكم على الاحترافية.
+                    </p>
+
+                    <div class="alf-testimonial-author">
+                        <div class="alf-testimonial-avatar">ع</div>
+                        <div>
+                            <h4 data-i18n="testimonials.customer1">عميلنا الكريم</h4>
+                         </div>
+                    </div>
+                </article>
+
+                <article class="alf-testimonial-card">
+                    <div class="alf-testimonial-top">
+                        <div class="alf-testimonial-quote">
+                            <i class="fas fa-quote-right"></i>
+                        </div>
+                        <div class="alf-testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+
+                    <p data-i18n="testimonials.review2">
+                        تعامل راقٍ وسرعة في الإنجاز واهتمام بأدق التفاصيل. المنتجات وصلت بجودة ممتازة، وسعدنا بالتعامل معكم.
+                    </p>
+
+                    <div class="alf-testimonial-author">
+                        <div class="alf-testimonial-avatar">م</div>
+                        <div>
+                            <h4 data-i18n="testimonials.customer2">عميلنا الكريم</h4>
+                         </div>
+                    </div>
+                </article>
+
+                <article class="alf-testimonial-card">
+                    <div class="alf-testimonial-top">
+                        <div class="alf-testimonial-quote">
+                            <i class="fas fa-quote-right"></i>
+                        </div>
+                        <div class="alf-testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+
+                    <p data-i18n="testimonials.review3">
+                        جودة عالية في تنفيذ اللوحات الإعلانية، مع دقة في المقاسات واهتمام بالتفاصيل. بالتأكيد لنا تعاملات أخرى معكم.
+                    </p>
+
+                    <div class="alf-testimonial-author">
+                        <div class="alf-testimonial-avatar">أ</div>
+                        <div>
+                            <h4 data-i18n="testimonials.customer3">عميلنا الكريم</h4>
+                         </div>
+                    </div>
+                </article>
+                <article class="alf-testimonial-card">
+                    <div class="alf-testimonial-top">
+                        <div class="alf-testimonial-quote">
+                            <i class="fas fa-quote-right"></i>
+                        </div>
+                        <div class="alf-testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+
+                    <p data-i18n="testimonials.review1">
+                        تجربة رائعة في التعامل وجودة الطباعة ممتازة، والتصميم والتنفيذ كانا على مستوى التوقعات. شكراً لكم على الاحترافية.
+                    </p>
+
+                    <div class="alf-testimonial-author">
+                        <div class="alf-testimonial-avatar">ع</div>
+                        <div>
+                            <h4 data-i18n="testimonials.customer1">عميلنا الكريم</h4>
+                         </div>
+                    </div>
+                </article>
+
+                <article class="alf-testimonial-card">
+                    <div class="alf-testimonial-top">
+                        <div class="alf-testimonial-quote">
+                            <i class="fas fa-quote-right"></i>
+                        </div>
+                        <div class="alf-testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+
+                    <p data-i18n="testimonials.review2">
+                        تعامل راقٍ وسرعة في الإنجاز واهتمام بأدق التفاصيل. المنتجات وصلت بجودة ممتازة، وسعدنا بالتعامل معكم.
+                    </p>
+
+                    <div class="alf-testimonial-author">
+                        <div class="alf-testimonial-avatar">م</div>
+                        <div>
+                            <h4 data-i18n="testimonials.customer2">عميلنا الكريم</h4>
+                         </div>
+                    </div>
+                </article>
+
+                <article class="alf-testimonial-card">
+                    <div class="alf-testimonial-top">
+                        <div class="alf-testimonial-quote">
+                            <i class="fas fa-quote-right"></i>
+                        </div>
+                        <div class="alf-testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+
+                    <p data-i18n="testimonials.review3">
+                        جودة عالية في تنفيذ اللوحات الإعلانية، مع دقة في المقاسات واهتمام بالتفاصيل. بالتأكيد لنا تعاملات أخرى معكم.
+                    </p>
+
+                    <div class="alf-testimonial-author">
+                        <div class="alf-testimonial-avatar">أ</div>
+                        <div>
+                            <h4 data-i18n="testimonials.customer3">عميلنا الكريم</h4>
+                         </div>
+                    </div>
+                </article>
+                <article class="alf-testimonial-card">
+                    <div class="alf-testimonial-top">
+                        <div class="alf-testimonial-quote">
+                            <i class="fas fa-quote-right"></i>
+                        </div>
+                        <div class="alf-testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+
+                    <p data-i18n="testimonials.review1">
+                        تجربة رائعة في التعامل وجودة الطباعة ممتازة، والتصميم والتنفيذ كانا على مستوى التوقعات. شكراً لكم على الاحترافية.
+                    </p>
+
+                    <div class="alf-testimonial-author">
+                        <div class="alf-testimonial-avatar">ع</div>
+                        <div>
+                            <h4 data-i18n="testimonials.customer1">عميلنا الكريم</h4>
+                         </div>
+                    </div>
+                </article>
+
+                <article class="alf-testimonial-card">
+                    <div class="alf-testimonial-top">
+                        <div class="alf-testimonial-quote">
+                            <i class="fas fa-quote-right"></i>
+                        </div>
+                        <div class="alf-testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+
+                    <p data-i18n="testimonials.review2">
+                        تعامل راقٍ وسرعة في الإنجاز واهتمام بأدق التفاصيل. المنتجات وصلت بجودة ممتازة، وسعدنا بالتعامل معكم.
+                    </p>
+
+                    <div class="alf-testimonial-author">
+                        <div class="alf-testimonial-avatar">م</div>
+                        <div>
+                            <h4 data-i18n="testimonials.customer2">عميلنا الكريم</h4>
+                         </div>
+                    </div>
+                </article>
+
+                <article class="alf-testimonial-card">
+                    <div class="alf-testimonial-top">
+                        <div class="alf-testimonial-quote">
+                            <i class="fas fa-quote-right"></i>
+                        </div>
+                        <div class="alf-testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+
+                    <p data-i18n="testimonials.review3">
+                        جودة عالية في تنفيذ اللوحات الإعلانية، مع دقة في المقاسات واهتمام بالتفاصيل. بالتأكيد لنا تعاملات أخرى معكم.
+                    </p>
+
+                    <div class="alf-testimonial-author">
+                        <div class="alf-testimonial-avatar">أ</div>
+                        <div>
+                            <h4 data-i18n="testimonials.customer3">عميلنا الكريم</h4>
+                         </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+
+   <div class="alf-testimonials-controls">
+    <div class="alf-testimonials-dots"></div>
+
+    <div class="alf-testimonials-arrows">
+        <button type="button" class="alf-testimonials-prev" aria-label="Previous">
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+        <button type="button" class="alf-testimonials-next" aria-label="Next">
+            <i class="fa-solid fa-arrow-left"></i>
+        </button>
+    </div>
+</div>
+
+        <div class="alf-testimonials-bottom" data-aos="fade-up">
+            <div>
+                <strong data-i18n="testimonials.bottomTitle">
+                    هل ترغب في تجربة خدماتنا؟
+                </strong>
+                <span data-i18n="testimonials.bottomDescription">
+                    يسعدنا أن نكون جزءاً من نجاح مشروعك القادم.
+                </span>
+            </div>
+
+            <a href="https://wa.me/966545953908" class="btn-gold" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-whatsapp"></i>
+                <span data-i18n="testimonials.contactButton">تواصل معنا</span>
+            </a>
+        </div>
+
+    </div>
+</section>
+        
+<section class="contact-section" id="contact" dir="rtl">
+    <div class="container">
+
+        <div class="contact-heading" data-aos="fade-up">
+            <span class="contact-eyebrow">
+                <i class="fas fa-envelope-open-text"></i>
+                <span data-i18n="contact.eyebrow">تواصل معنا</span>
+            </span>
+
+            <h2>
+                <span data-i18n="contact.titleFirst">دعنا نبدأ</span>
+                <span class="about-highlight" data-i18n="contact.titleHighlight">مشروعك القادم</span>
+            </h2>
+
+            <p data-i18n="contact.description">
+                لديك فكرة إعلانية أو تحتاج إلى حلول طباعة وتصميم؟
+                يسعدنا التواصل معك ومساعدتك في اختيار الحل المناسب.
+            </p>
+        </div>
+
+        <div class="contact-wrapper" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="contact-form-panel">
+                <div class="contact-form-heading">
+                    <span class="contact-form-icon">
+                        <i class="fas fa-paper-plane"></i>
+                    </span>
+
+                    <div>
+                        <h3 data-i18n="contact.formTitle">أرسل لنا رسالة</h3>
+                        <p data-i18n="contact.formDescription">
+                            املأ البيانات التالية وسنتواصل معك.
+                        </p>
+                    </div>
+                </div>
+
+                <form id="contactForm" class="contact-form">
+                    <div class="row g-3">
+
+                        <div class="col-md-6">
+                            <label for="contactName" data-i18n="contact.nameLabel">
+                                الاسم الكامل
+                            </label>
+
+                            <div class="contact-input-wrap">
+                                <i class="fas fa-user"></i>
+                                <input
+                                    type="text"
+                                    id="contactName"
+                                    name="name"
+                                    placeholder="اكتب اسمك"
+                                    data-i18n-placeholder="contact.namePlaceholder"
+                                    autocomplete="name"
+                                    required>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="contactPhone" data-i18n="contact.phoneLabel">
+                                رقم الجوال
+                            </label>
+
+                            <div class="contact-input-wrap">
+                                <i class="fas fa-phone"></i>
+                                <input
+                                    type="tel"
+                                    id="contactPhone"
+                                    name="phone"
+                                    placeholder="05xxxxxxxx"
+                                    data-i18n-placeholder="contact.phonePlaceholder"
+                                    autocomplete="tel"
+                                    inputmode="tel"
+                                    required>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="contactService" data-i18n="contact.serviceLabel">
+                                نوع الخدمة
+                            </label>
+
+                            <div class="contact-input-wrap">
+                                <i class="fas fa-layer-group"></i>
+
+                                <select id="contactService" name="service" required>
+                                    <option value="" selected disabled data-i18n="contact.servicePlaceholder">
+                                        اختر الخدمة المطلوبة
+                                    </option>
+
+                                    <option value="تصميم وطباعة الهويات البصرية" data-i18n="contact.serviceIdentity">
+                                        تصميم وطباعة الهويات البصرية
+                                    </option>
+
+                                    <option value="البنرات والملصقات" data-i18n="contact.serviceBanners">
+                                        البنرات والملصقات
+                                    </option>
+
+                                    <option value="اللوحات الإعلانية والكلادينج" data-i18n="contact.serviceSignage">
+                                        اللوحات الإعلانية والكلادينج
+                                    </option>
+
+                                    <option value="الدروع والهدايا" data-i18n="contact.serviceGifts">
+                                        الدروع والهدايا
+                                    </option>
+
+                                    <option value="القص والحفر بالليزر" data-i18n="contact.serviceLaser">
+                                        القص والحفر بالليزر
+                                    </option>
+
+                                    <option value="خدمات الحج والعمرة" data-i18n="contact.serviceHajj">
+                                        خدمات الحج والعمرة
+                                    </option>
+
+                                    <option value="خدمة أخرى" data-i18n="contact.serviceOther">
+                                        خدمة أخرى
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="contactMessage" data-i18n="contact.messageLabel">
+                                تفاصيل طلبك
+                            </label>
+
+                            <div class="contact-input-wrap contact-textarea-wrap">
+                                <i class="fas fa-comment-dots"></i>
+                                <textarea
+                                    id="contactMessage"
+                                    name="message"
+                                    rows="4"
+                                    placeholder="أخبرنا بالمزيد عن مشروعك أو طلبك..."
+                                    data-i18n-placeholder="contact.messagePlaceholder"
+                                    required></textarea>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <button type="submit" class="contact-submit">
+                                <span data-i18n="contact.submitBtn">إرسال الرسالة</span>
+                                <i class="fas fa-arrow-left"></i>
+                            </button>
+
+                            <p
+                                class="contact-form-status"
+                                id="contactFormStatus"
+                                role="status"
+                                aria-live="polite"></p>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+
+            <div class="contact-info-card">
+                <div class="contact-info-overlay"></div>
+
+                <div class="contact-info-content">
+                    <span class="contact-info-label">
+                        <i class="fas fa-headset"></i>
+                        <span data-i18n="contact.infoEyebrow">
+                            نحن هنا لمساعدتك
+                        </span>
+                    </span>
+
+                    <h3>
+                        <span data-i18n="contact.infoTitleFirst">
+                            فكرتك تستحق
+                        </span>
+                        <span data-i18n="contact.infoTitleHighlight">
+                            تنفيذًا مميزًا
+                        </span>
+                    </h3>
+
+                    <p class="contact-info-description" data-i18n="contact.infoDescription">
+                        تواصل مع فريق شركة الفنان للدعاية والإعلان،
+                        ودعنا نساعدك في تحويل أفكارك إلى تصاميم
+                        ومطبوعات وحلول إعلانية احترافية.
+                    </p>
+
+                    <div class="contact-info-list">
+
+                        <a href="tel:+966545953908" class="contact-info-item">
+                            <span class="contact-info-item-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </span>
+
+                            <span class="contact-info-item-text">
+                                <small data-i18n="contact.callLabel">اتصل بنا</small>
+                                <strong dir="ltr">966545953908</strong>
+                            </span>
+
+                            <i class="fas fa-arrow-up contact-info-arrow"></i>
+                        </a>
+
+                        <a href="mailto:alfanaan.adv2@gmail.com" class="contact-info-item">
+                            <span class="contact-info-item-icon">
+                                <i class="fas fa-envelope"></i>
+                            </span>
+
+                            <span class="contact-info-item-text">
+                                <small data-i18n="contact.emailLabel">البريد الإلكتروني</small>
+                                <strong dir="ltr">alfanaan.adv2@gmail.com</strong>
+                            </span>
+
+                            <i class="fas fa-arrow-up contact-info-arrow"></i>
+                        </a>
+
+                        <div class="contact-info-item">
+                            <span class="contact-info-item-icon">
+                                <i class="fas fa-location-dot"></i>
+                            </span>
+
+                            <span class="contact-info-item-text">
+                                <small data-i18n="contact.locationLabel">موقعنا</small>
+                                <strong data-i18n="contact.address">
+                                    مكة المكرمة - الشوقية - شارع أبرهة بن شرحبيل
+                                    بجوار جامع المهاجرين
+                                </strong>
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <div class="contact-info-footer">
+                        <span data-i18n="contact.followLabel">
+                            تابعنا وتواصل معنا
+                        </span>
+
+                        <div class="contact-social-links">
+                            <a
+                                href="https://www.instagram.com/alfananmakkah?dlrf=MXhwNjA1N2U0OG9uOQ=="
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+
+                            <a
+                                href="https://wa.me/966545953908"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="WhatsApp">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="location-wrapper mt-5" data-aos="fade-up" data-aos-delay="100">
+            <div class="location-map">
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3714.991229523252!2d39.79232768506134!3d21.390249985803674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjHCsDIzJzI0LjkiTiAzOcKwNDcnMjQuNSJF!5e0!3m2!1sar!2seg!4v1792419112432!5m2!1sar!2seg"
+                    title="موقع شركة الفنان للدعاية والإعلان على خرائط Google"
+                    data-i18n-title="contact.mapTitle"
+                    width="100%"
+                    height="100%"
+                    style="border: 0;"
+                    allowfullscreen
+                    loading="lazy"
+                    referrerpolicy="strict-origin-when-cross-origin">
+                </iframe>
+
+                <span class="location-map-label">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <span data-i18n="contact.locationLabel">موقعنا</span>
+                </span>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+        </main>
+
+      
+<footer class="alf-footer" id="footer" dir="rtl">
+    <div class="alf-footer-glow alf-footer-glow-one"></div>
+    <div class="alf-footer-glow alf-footer-glow-two"></div>
+
+    <div class="container">
+
+        <div class="row g-4 alf-footer-main">
+
+            <div class="col-lg-4 col-md-6">
+                <div class="alf-footer-about">
+                    <a href="index.html" class="alf-footer-brand">
+                        <span>
+                            <img src="images/logo-2.png" height="70" alt="Al Fannan Logo">
+                            <img src="images/logo-3.png" height="70" alt="Al Fannan Logo">
+                        </span>
+                    </a>
+
+                    <p data-i18n="footer.description">
+                        في شركة الفنان، نجمع بين الخبرة والإبداع والجودة
+                        لنقدم حلولاً متكاملة في الدعاية والإعلان والطباعة
+                        الرقمية والهدايا الدعائية، ونساعد علامتك التجارية
+                        على التميز.
+                    </p>
+
+                    <div class="alf-footer-experience">
+                        <div class="alf-footer-experience-icon">
+                            <i class="fa-solid fa-award"></i>
+                        </div>
+
+                        <div>
+                            <strong data-i18n="footer.experienceTitle">
+                                +18 عاماً من الخبرة
+                            </strong>
+                            <span data-i18n="footer.experienceText">
+                                إبداع وجودة وثقة منذ البداية
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-md-6">
+                <div class="alf-footer-column">
+                    <h3 data-i18n="footer.quickLinksTitle">روابط سريعة</h3>
+
+                    <ul class="alf-footer-links">
+                        <li>
+                            <a href="index.html">
+                                <i class="fa-solid fa-angle-left"></i>
+                                <span data-i18n="footer.home">الرئيسية</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="products.html">
+                                <i class="fa-solid fa-angle-left"></i>
+                                <span data-i18n="footer.allProducts">جميع المنتجات</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="services.html">
+                                <i class="fa-solid fa-angle-left"></i>
+                                <span data-i18n="footer.services">خدماتنا</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="index.html#about">
+                                <i class="fa-solid fa-angle-left"></i>
+                                <span data-i18n="footer.about">من نحن</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="index.html#why-us">
+                                <i class="fa-solid fa-angle-left"></i>
+                                <span data-i18n="footer.whyUs">لماذا الفنان؟</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="index.html#contact">
+                                <i class="fa-solid fa-angle-left"></i>
+                                <span data-i18n="footer.contact">تواصل معنا</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="alf-footer-column">
+                    <h3 data-i18n="footer.servicesTitle">خدماتنا</h3>
+
+                    <ul class="alf-footer-links">
+                        <li>
+                            <a href="products.html">
+                                <i class="fa-solid fa-angle-left"></i>
+                                <span data-i18n="footer.promotionalGifts">الهدايا الدعائية</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="products.html">
+                                <i class="fa-solid fa-angle-left"></i>
+                                <span data-i18n="footer.paperPrinting">المطبوعات الورقية</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="products.html">
+                                <i class="fa-solid fa-angle-left"></i>
+                                <span data-i18n="footer.identityPrinting">مطبوعات الهوية</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="products.html">
+                                <i class="fa-solid fa-angle-left"></i>
+                                <span data-i18n="footer.packaging">التغليف</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="products.html">
+                                <i class="fa-solid fa-angle-left"></i>
+                                <span data-i18n="footer.signage">اللوحات الإعلانية</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="products.html">
+                                <i class="fa-solid fa-angle-left"></i>
+                                <span data-i18n="footer.design">التصميم</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="products.html">
+                                <i class="fa-solid fa-angle-left"></i>
+                                <span data-i18n="footer.dtfUv">طباعة DTF وUV</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="alf-footer-column">
+                    <h3 data-i18n="footer.contactTitle">تواصل معنا</h3>
+
+                    <div class="alf-footer-contact-list">
+
+                        <a href="tel:+966545953908" class="alf-footer-contact-item">
+                            <span class="alf-footer-contact-icon">
+                                <i class="fa-solid fa-phone-volume"></i>
+                            </span>
+
+                            <span>
+                                <small data-i18n="footer.callUs">اتصل بنا</small>
+                                <strong dir="ltr">+966 54 595 3908</strong>
+                            </span>
+                        </a>
+
+                        <a href="mailto:alfanaan.adv2@gmail.com" class="alf-footer-contact-item">
+                            <span class="alf-footer-contact-icon">
+                                <i class="fa-solid fa-envelope"></i>
+                            </span>
+
+                            <span>
+                                <small data-i18n="footer.email">البريد الإلكتروني</small>
+                                <strong dir="ltr">alfanaan.adv2@gmail.com</strong>
+                            </span>
+                        </a>
+
+                        <div class="alf-footer-contact-item">
+                            <span class="alf-footer-contact-icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </span>
+
+                            <span>
+                                <small data-i18n="footer.location">موقعنا</small>
+                                <strong data-i18n="footer.address">
+                                    مكة المكرمة - الشوقية - شارع أريكة بن شريح
+                                    بجوار جامع الصابرين
+                                </strong>
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="alf-footer-features">
+            <div class="alf-footer-feature">
+                <i class="fa-solid fa-medal"></i>
+                <span data-i18n="footer.featureQuality">جودة في التنفيذ</span>
+            </div>
+
+            <div class="alf-footer-feature">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                <span data-i18n="footer.featureCreative">تصاميم إبداعية</span>
+            </div>
+
+            <div class="alf-footer-feature">
+                <i class="fa-solid fa-handshake"></i>
+                <span data-i18n="footer.featureSupport">خدمة عملاء مميزة</span>
+            </div>
+
+            <div class="alf-footer-feature">
+                <i class="fa-solid fa-tags"></i>
+                <span data-i18n="footer.featurePrices">أسعار منافسة</span>
+            </div>
+        </div>
+
+        <div class="alf-footer-bottom">
+            <p>
+                <span data-i18n="footer.copyright">جميع الحقوق محفوظة ©</span>
+                <span id="alfFooterYear"></span>
+                <strong data-i18n="footer.companyName">
+                    شركة الفنان للدعاية والإعلان والطباعة الرقمية
+                </strong>
+            </p>
+
+            <a href="#home" class="alf-footer-backtop">
+                <span data-i18n="footer.backToTop">العودة للأعلى</span>
+                <i class="fa-solid fa-arrow-up"></i>
+            </a>
+        </div>
+
+    </div>
+</footer>
+
+    <a
+      class="whatsapp-float"
+      href="https://wa.me/966545953908"
+      target="_blank"
+      rel="noopener"
+      aria-label="تواصل عبر واتساب"
+      ><i class="fa-brands fa-whatsapp"></i
+    ></a>
+    <button class="back-to-top" id="backToTop" aria-label="العودة للأعلى">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+
+        <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/ScrollTrigger.min.js"></script>
+        <script src="js/index.js"></script>
+        <script src="js/language.js" defer></script>
+<script>
+
+</script>
+    </body>
+</html>

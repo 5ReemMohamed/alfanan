@@ -1,0 +1,762 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="css/all.min.css" />
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/services.css" />
+  </head>
+
+  <body>
+      <div class="alf-topbar">
+    <div class="alf-topbar-container">
+
+        <div class="alf-topbar-search">
+            <i class="fas fa-search"></i>
+            <input
+                type="search"
+                id="siteSearch"
+                data-i18n-placeholder="topbar.searchPlaceholder"
+                placeholder="ابحث عن منتج أو خدمة..."
+            >
+        </div>
+
+        <div class="alf-topbar-delivery">
+            <i class="fas fa-truck-fast"></i>
+            <span data-i18n="topbar.deliveryMessage">
+                توصيل مجاني داخل مكة لأي طلب فوق
+                <strong>500 ريال</strong>
+            </span>
+        </div>
+
+        <button class="alf-theme-toggle" id="themeToggle" aria-label="Change theme">
+            <i class="fas fa-moon"></i>
+        </button>
+
+    </div>
+</div>  
+<div class="language-switcher" id="languageSwitcher">
+    <button
+        class="language-switcher-btn"
+        id="languageSwitcherBtn"
+        type="button"
+        aria-label="Change language"
+        aria-expanded="false"
+        aria-controls="languageSwitcherMenu"
+    >
+        <span class="language-current-flag" id="currentLangFlag">🇸🇦</span>
+        <span class="language-current-code" id="currentLangCode">AR</span>
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+    <div class="language-switcher-menu" id="languageSwitcherMenu">
+        <button type="button" class="language-option active" data-lang="ar">
+            <span>🇸🇦</span>
+            <span>العربية</span>
+            <i class="fa-solid fa-check"></i>
+        </button>
+
+        <button type="button" class="language-option" data-lang="en">
+            <span>🇺🇸</span>
+            <span>English</span>
+            <i class="fa-solid fa-check"></i>
+        </button>
+    </div>
+</div>
+
+ 
+<header class="site-header">
+    <div class="header-inner">
+
+        <a href="index.html" class="d-flex flex-row"
+           aria-label="الفنّان الرئيسية">
+            <img src="images/logo-2.png" height="40" alt="">
+            <img src="images/logo-3.png" height="40" alt="">
+        </a>
+
+        <button class="mobile-toggle" id="mobileToggle"
+                aria-label="فتح القائمة" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+      <nav class="main-nav" id="mainNav">
+    <a href="index.html" class="nav-link">
+        <span data-i18n="nav.home">الرئيسية</span>
+    </a>
+
+    <div id="navCategories"></div>
+
+    <a href="products.html" class="nav-link">
+        <span data-i18n="nav.marketing">التسويق</span>
+    </a>
+</nav>
+    </div>
+</header>
+
+
+<main>
+
+
+<section class="alf-sv-hero">
+    <div class="alf-sv-hero-pattern"></div>
+    <div class="alf-sv-hero-glow"></div>
+
+    <div class="container alf-sv-hero-container">
+   
+
+        <div class="row align-items-center gy-5 pt-5">
+            <div class="col-lg-7 pt-5">
+                <div class="alf-sv-hero-content">
+                    <span class="alf-sv-eyebrow">
+                        <i class="fa-solid fa-sparkles"></i>
+                        <span data-i18n="servicesHero.eyebrow">
+                            خدمات الفنان
+                        </span>
+                    </span>
+
+                    <h1>
+                        <span data-i18n="servicesHero.titleFirst">
+                            حلول إبداعية
+                        </span>
+                        <span data-i18n="servicesHero.titleHighlight">
+                            لكل احتياجاتك
+                        </span>
+                    </h1>
+
+                    <p data-i18n="servicesHero.description">
+                        اكتشف عالمًا من خدمات الدعاية والإعلان والطباعة الرقمية.
+                        من الفكرة الأولى إلى المنتج النهائي، نوفر لك حلولاً
+                        متكاملة تساعد علامتك التجارية على الظهور والتميز.
+                    </p>
+
+                    <div class="alf-sv-hero-actions">
+                        <a href="#all-services" class="alf-sv-primary-btn">
+                            <span data-i18n="servicesHero.exploreServices">
+                                استكشف الخدمات
+                            </span>
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </a>
+
+                        <a href="products.html" class="alf-sv-secondary-btn">
+                            <span data-i18n="servicesHero.browseProducts">
+                                تصفح المنتجات
+                            </span>
+                            <i class="fa-solid fa-arrow-up-left"></i>
+                        </a>
+                    </div>
+
+                    <div class="alf-sv-hero-points">
+                        <span>
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span data-i18n="servicesHero.pointOne">
+                                تنفيذ احترافي
+                            </span>
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span data-i18n="servicesHero.pointTwo">
+                                جودة عالية
+                            </span>
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span data-i18n="servicesHero.pointThree">
+                                حلول حسب الطلب
+                            </span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-5">
+                <div class="alf-sv-hero-art">
+                    <div class="alf-sv-art-circle"></div>
+
+                    <div class="alf-sv-art-main">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        <strong data-i18n="servicesHero.brandName">
+                            الفنان
+                        </strong>
+                        <span data-i18n="servicesHero.artTagline">
+                            نحوّل أفكارك إلى واقع
+                        </span>
+                    </div>
+
+                    <div class="alf-sv-art-item alf-sv-art-item-one">
+                        <i class="fa-solid fa-gift"></i>
+                        <span data-i18n="servicesHero.artGifts">
+                            هدايا دعائية
+                        </span>
+                    </div>
+
+                    <div class="alf-sv-art-item alf-sv-art-item-two">
+                        <i class="fa-solid fa-print"></i>
+                        <span data-i18n="servicesHero.artPrinting">
+                            طباعة رقمية
+                        </span>
+                    </div>
+
+                    <div class="alf-sv-art-item alf-sv-art-item-three">
+                        <i class="fa-solid fa-palette"></i>
+                        <span data-i18n="servicesHero.artDesign">
+                            تصميم وإبداع
+                        </span>
+                    </div>
+
+                    <div class="alf-sv-art-deco alf-sv-art-deco-one"></div>
+                    <div class="alf-sv-art-deco alf-sv-art-deco-two"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="alf-sv-services" id="all-services">
+    <div class="container">
+
+        <div class="alf-sv-section-heading">
+            <div>
+                <span class="alf-sv-section-label">
+                    <i class="fa-solid fa-layer-group"></i>
+                    <span data-i18n="servicesPage.discover">اكتشف أقسامنا</span>
+                </span>
+
+                <h2>
+                    <span data-i18n="servicesPage.titleFirst">خدمات متنوعة</span>
+                    <span data-i18n="servicesPage.titleHighlight">تلبي احتياجاتك</span>
+                </h2>
+
+                <p data-i18n="servicesPage.description">
+                    اختر الخدمة المناسبة لك، واستعرض المنتجات والتصاميم المتاحة.
+                </p>
+            </div>
+
+            <div class="alf-sv-total">
+                <strong id="alfSvTotal">10</strong>
+                <span data-i18n="servicesPage.totalLabel">خدمات متكاملة</span>
+            </div>
+        </div>
+
+        <div class="row g-4 alf-sv-grid" id="alfSvGrid">
+
+            <div class="col-lg-6 alf-sv-item" id="promotional-gifts" data-group="events" data-search="الهدايا الدعائية هدايا الشركات التوزيعات الهدايا التذكارية">
+                <a href="products.html?category=promotional-gifts" class="alf-sv-card">
+                    <div class="alf-sv-card-icon">
+                        <i class="fa-solid fa-gift"></i>
+                    </div>
+                    <div class="alf-sv-card-content">
+                        <span class="alf-sv-card-category" data-i18n="servicesPage.categoryEvents">الهدايا والفعاليات</span>
+                        <h3 data-i18n="servicesPage.giftsTitle">الهدايا الدعائية</h3>
+                        <p data-i18n="servicesPage.giftsDescription">هدايا للشركات والمناسبات تحمل شعارك وتعكس هوية علامتك التجارية بأسلوب مميز.</p>
+                        <span class="alf-sv-card-link">
+                            <span data-i18n="servicesPage.viewProducts">استعرض المنتجات</span>
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </span>
+                    </div>
+                    <span class="alf-sv-card-number">01</span>
+                </a>
+            </div>
+
+            <div class="col-lg-6 alf-sv-item" id="paper-printing" data-group="printing" data-search="المطبوعات الورقية بروشورات فلايرات كتيبات مطابع">
+                <a href="products.html?category=paper-printing" class="alf-sv-card">
+                    <div class="alf-sv-card-icon">
+                        <i class="fa-solid fa-print"></i>
+                    </div>
+                    <div class="alf-sv-card-content">
+                        <span class="alf-sv-card-category" data-i18n="servicesPage.categoryPrinting">الطباعة</span>
+                        <h3 data-i18n="servicesPage.paperTitle">المطبوعات الورقية</h3>
+                        <p data-i18n="servicesPage.paperDescription">بروشورات وفلايرات وكتيبات ومطبوعات متنوعة بجودة عالية وتشطيبات احترافية.</p>
+                        <span class="alf-sv-card-link">
+                            <span data-i18n="servicesPage.viewProducts">استعرض المنتجات</span>
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </span>
+                    </div>
+                    <span class="alf-sv-card-number">02</span>
+                </a>
+            </div>
+
+            <div class="col-lg-6 alf-sv-item" id="identity-printing" data-group="branding" data-search="مطبوعات الهوية كروت شخصية ورق مراسلات أظرف سندات">
+                <a href="products.html?category=identity-printing" class="alf-sv-card">
+                    <div class="alf-sv-card-icon">
+                        <i class="fa-solid fa-address-card"></i>
+                    </div>
+                    <div class="alf-sv-card-content">
+                        <span class="alf-sv-card-category" data-i18n="servicesPage.categoryBranding">الهوية والتصميم</span>
+                        <h3 data-i18n="servicesPage.identityTitle">مطبوعات الهوية</h3>
+                        <p data-i18n="servicesPage.identityDescription">كروت شخصية وأوراق مراسلات وأظرف ومطبوعات متناسقة تعكس احترافية مشروعك.</p>
+                        <span class="alf-sv-card-link">
+                            <span data-i18n="servicesPage.viewProducts">استعرض المنتجات</span>
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </span>
+                    </div>
+                    <span class="alf-sv-card-number">03</span>
+                </a>
+            </div>
+
+            <div class="col-lg-6 alf-sv-item" id="packaging" data-group="printing" data-search="التغليف علب كرتون أكياس بوكسات تغليف منتجات">
+                <a href="products.html?category=packaging" class="alf-sv-card">
+                    <div class="alf-sv-card-icon">
+                        <i class="fa-solid fa-box-open"></i>
+                    </div>
+                    <div class="alf-sv-card-content">
+                        <span class="alf-sv-card-category" data-i18n="servicesPage.categoryPrinting">الطباعة</span>
+                        <h3 data-i18n="servicesPage.packagingTitle">التغليف</h3>
+                        <p data-i18n="servicesPage.packagingDescription">تصميم وطباعة علب التغليف والبوكسات والأكياس لتعزيز تجربة تقديم منتجاتك.</p>
+                        <span class="alf-sv-card-link">
+                            <span data-i18n="servicesPage.viewProducts">استعرض المنتجات</span>
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </span>
+                    </div>
+                    <span class="alf-sv-card-number">04</span>
+                </a>
+            </div>
+
+            <div class="col-lg-6 alf-sv-item" id="exhibitions" data-group="events" data-search="تنظيم المعارض تجهيز المعارض الأجنحة ستاندات عرض">
+                <a href="products.html?category=exhibitions" class="alf-sv-card">
+                    <div class="alf-sv-card-icon">
+                        <i class="fa-solid fa-store"></i>
+                    </div>
+                    <div class="alf-sv-card-content">
+                        <span class="alf-sv-card-category" data-i18n="servicesPage.categoryEvents">الهدايا والفعاليات</span>
+                        <h3 data-i18n="servicesPage.exhibitionsTitle">تنظيم المعارض</h3>
+                        <p data-i18n="servicesPage.exhibitionsDescription">تجهيز أركان المعارض ووسائل العرض والمواد الدعائية لحضور احترافي لعلامتك.</p>
+                        <span class="alf-sv-card-link">
+                            <span data-i18n="servicesPage.viewProducts">استعرض المنتجات</span>
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </span>
+                    </div>
+                    <span class="alf-sv-card-number">05</span>
+                </a>
+            </div>
+
+            <div class="col-lg-6 alf-sv-item" id="events" data-group="events" data-search="الفعاليات والمناسبات الحج العمرة التخرج توزيعات">
+                <a href="products.html?category=events" class="alf-sv-card">
+                    <div class="alf-sv-card-icon">
+                        <i class="fa-solid fa-calendar-days"></i>
+                    </div>
+                    <div class="alf-sv-card-content">
+                        <span class="alf-sv-card-category" data-i18n="servicesPage.categoryEvents">الهدايا والفعاليات</span>
+                        <h3 data-i18n="servicesPage.eventsTitle">الفعاليات والمناسبات</h3>
+                        <p data-i18n="servicesPage.eventsDescription">مستلزمات الفعاليات والتكريم والمناسبات وتجهيزات دعائية تناسب مختلف الأحداث.</p>
+                        <span class="alf-sv-card-link">
+                            <span data-i18n="servicesPage.viewProducts">استعرض المنتجات</span>
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </span>
+                    </div>
+                    <span class="alf-sv-card-number">06</span>
+                </a>
+            </div>
+
+            <div class="col-lg-6 alf-sv-item" id="signage" data-group="advertising" data-search="اللوحات الاعلانية لوحات مضيئة كلادينج حروف بارزة">
+                <a href="products.html?category=signage" class="alf-sv-card">
+                    <div class="alf-sv-card-icon">
+                        <i class="fa-solid fa-sign-hanging"></i>
+                    </div>
+                    <div class="alf-sv-card-content">
+                        <span class="alf-sv-card-category" data-i18n="servicesPage.categoryAdvertising">الإعلانات</span>
+                        <h3 data-i18n="servicesPage.signageTitle">اللوحات الإعلانية</h3>
+                        <p data-i18n="servicesPage.signageDescription">لوحات مضيئة وحروف بارزة وواجهات إعلانية تساعد نشاطك على الظهور بقوة.</p>
+                        <span class="alf-sv-card-link">
+                            <span data-i18n="servicesPage.viewProducts">استعرض المنتجات</span>
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </span>
+                    </div>
+                    <span class="alf-sv-card-number">07</span>
+                </a>
+            </div>
+
+            <div class="col-lg-6 alf-sv-item" id="design" data-group="branding" data-search="التصميم تصميم شعار هوية بصرية بروفايل تصاميم">
+                <a href="products.html?category=design" class="alf-sv-card">
+                    <div class="alf-sv-card-icon">
+                        <i class="fa-solid fa-pen-ruler"></i>
+                    </div>
+                    <div class="alf-sv-card-content">
+                        <span class="alf-sv-card-category" data-i18n="servicesPage.categoryBranding">الهوية والتصميم</span>
+                        <h3 data-i18n="servicesPage.designTitle">التصميم</h3>
+                        <p data-i18n="servicesPage.designDescription">تصميم الشعارات والهويات البصرية والمواد التسويقية التي تعبر عن شخصية مشروعك.</p>
+                        <span class="alf-sv-card-link">
+                            <span data-i18n="servicesPage.viewProducts">استعرض المنتجات</span>
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </span>
+                    </div>
+                    <span class="alf-sv-card-number">08</span>
+                </a>
+            </div>
+
+            <div class="col-lg-6 alf-sv-item" id="marketing" data-group="advertising" data-search="التسويق التسويق الالكتروني الحملات الاعلانية">
+                <a href="products.html?category=marketing" class="alf-sv-card">
+                    <div class="alf-sv-card-icon">
+                        <i class="fa-solid fa-bullhorn"></i>
+                    </div>
+                    <div class="alf-sv-card-content">
+                        <span class="alf-sv-card-category" data-i18n="servicesPage.categoryAdvertising">الإعلانات</span>
+                        <h3 data-i18n="servicesPage.marketingTitle">التسويق</h3>
+                        <p data-i18n="servicesPage.marketingDescription">حلول تسويقية ومواد دعائية تساعدك على إيصال رسالتك إلى جمهورك المستهدف.</p>
+                        <span class="alf-sv-card-link">
+                            <span data-i18n="servicesPage.viewProducts">استعرض المنتجات</span>
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </span>
+                    </div>
+                    <span class="alf-sv-card-number">09</span>
+                </a>
+            </div>
+
+            <div class="col-lg-6 alf-sv-item" id="dtf-uv" data-group="printing" data-search="طباعة dtf uv طباعة على الملابس الاكريليك الخامات">
+                <a href="products.html?category=dtf-uv" class="alf-sv-card">
+                    <div class="alf-sv-card-icon">
+                        <i class="fa-solid fa-shirt"></i>
+                    </div>
+                    <div class="alf-sv-card-content">
+                        <span class="alf-sv-card-category" data-i18n="servicesPage.categoryPrinting">الطباعة</span>
+                        <h3 data-i18n="servicesPage.dtfTitle">طباعة DTF وطباعة UV</h3>
+                        <p data-i18n="servicesPage.dtfDescription">تقنيات طباعة حديثة لتخصيص الملابس والمنتجات والأسطح المختلفة بدقة وجودة.</p>
+                        <span class="alf-sv-card-link">
+                            <span data-i18n="servicesPage.viewProducts">استعرض المنتجات</span>
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </span>
+                    </div>
+                    <span class="alf-sv-card-number">10</span>
+                </a>
+            </div>
+
+        </div>
+
+      
+
+
+
+
+    </div>
+</section>
+
+
+<section class="alf-sv-custom">
+    <div class="container">
+        <div class="alf-sv-custom-box">
+            <div class="alf-sv-custom-decoration"></div>
+
+            <div class="alf-sv-custom-icon">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+            </div>
+
+            <div class="alf-sv-custom-text">
+                <span data-i18n="servicesCustom.eyebrow">
+                    خدمة خاصة بك
+                </span>
+
+                <h2 data-i18n="servicesCustom.title">
+                    لم تجد ما تبحث عنه؟
+                </h2>
+
+                <p data-i18n="servicesCustom.description">
+                    أخبرنا بفكرتك أو المنتج الذي ترغب في تنفيذه،
+                    وسيساعدك فريق الفنان في اختيار الحل المناسب.
+                </p>
+            </div>
+
+            <a
+                href="https://wa.me/966545953908?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%B7%D9%84%D8%A8%20%D8%AE%D8%AF%D9%85%D8%A9%20%D9%85%D8%AE%D8%B5%D8%B5%D8%A9"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="alf-sv-custom-btn"
+                id="alfSvCustomWhatsapp"
+            >
+                <i class="fa-brands fa-whatsapp"></i>
+
+                <span data-i18n="servicesCustom.button">
+                    اطلب خدمة مخصصة
+                </span>
+
+                <i class="fa-solid fa-arrow-up-left"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+
+</main>
+<footer class="alf-footer" id="footer" dir="rtl">
+    <div class="alf-footer-glow alf-footer-glow-one"></div>
+    <div class="alf-footer-glow alf-footer-glow-two"></div>
+
+    <div class="container">
+
+        <div class="row g-4 alf-footer-main">
+
+            <div class="col-lg-4 col-md-6">
+                <div class="alf-footer-about">
+                    <a href="index.html" class="alf-footer-brand">
+                        <span>
+                            <img src="images/logo-2.png" height="70" alt="Al Fannan Logo">
+                            <img src="images/logo-3.png" height="70" alt="Al Fannan Logo">
+                        </span>
+                    </a>
+
+                    <p data-i18n="footer.description">
+                        في شركة الفنان، نجمع بين الخبرة والإبداع والجودة
+                        لنقدم حلولاً متكاملة في الدعاية والإعلان والطباعة
+                        الرقمية والهدايا الدعائية، ونساعد علامتك التجارية
+                        على التميز.
+                    </p>
+
+                    <div class="alf-footer-experience">
+                        <div class="alf-footer-experience-icon">
+                            <i class="fa-solid fa-award"></i>
+                        </div>
+
+                        <div>
+                            <strong data-i18n="footer.experienceTitle">
+                                +18 عاماً من الخبرة
+                            </strong>
+                            <span data-i18n="footer.experienceText">
+                                إبداع وجودة وثقة منذ البداية
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-md-6">
+                <div class="alf-footer-column">
+                    <h3 data-i18n="footer.quickLinksTitle">روابط سريعة</h3>
+
+                    <ul class="alf-footer-links">
+                        <li>
+                            <a href="index.html">
+                                <i class="fa-solid fa-angle-left"></i>
+                                <span data-i18n="footer.home">الرئيسية</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="products.html">
+                                <i class="fa-solid fa-angle-left"></i>
+                                <span data-i18n="footer.allProducts">جميع المنتجات</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="services.html">
+                                <i class="fa-solid fa-angle-left"></i>
+                                <span data-i18n="footer.services">خدماتنا</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="index.html#about">
+                                <i class="fa-solid fa-angle-left"></i>
+                                <span data-i18n="footer.about">من نحن</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="index.html#why-us">
+                                <i class="fa-solid fa-angle-left"></i>
+                                <span data-i18n="footer.whyUs">لماذا الفنان؟</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="index.html#contact">
+                                <i class="fa-solid fa-angle-left"></i>
+                                <span data-i18n="footer.contact">تواصل معنا</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="alf-footer-column">
+                    <h3 data-i18n="footer.servicesTitle">خدماتنا</h3>
+
+                    <ul class="alf-footer-links">
+                        <li>
+                            <a href="products.html">
+                                <i class="fa-solid fa-angle-left"></i>
+                                <span data-i18n="footer.promotionalGifts">الهدايا الدعائية</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="products.html">
+                                <i class="fa-solid fa-angle-left"></i>
+                                <span data-i18n="footer.paperPrinting">المطبوعات الورقية</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="products.html">
+                                <i class="fa-solid fa-angle-left"></i>
+                                <span data-i18n="footer.identityPrinting">مطبوعات الهوية</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="products.html">
+                                <i class="fa-solid fa-angle-left"></i>
+                                <span data-i18n="footer.packaging">التغليف</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="products.html">
+                                <i class="fa-solid fa-angle-left"></i>
+                                <span data-i18n="footer.signage">اللوحات الإعلانية</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="products.html">
+                                <i class="fa-solid fa-angle-left"></i>
+                                <span data-i18n="footer.design">التصميم</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="products.html">
+                                <i class="fa-solid fa-angle-left"></i>
+                                <span data-i18n="footer.dtfUv">طباعة DTF وUV</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="alf-footer-column">
+                    <h3 data-i18n="footer.contactTitle">تواصل معنا</h3>
+
+                    <div class="alf-footer-contact-list">
+
+                        <a href="tel:+966545953908" class="alf-footer-contact-item">
+                            <span class="alf-footer-contact-icon">
+                                <i class="fa-solid fa-phone-volume"></i>
+                            </span>
+
+                            <span>
+                                <small data-i18n="footer.callUs">اتصل بنا</small>
+                                <strong dir="ltr">+966 54 595 3908</strong>
+                            </span>
+                        </a>
+
+                        <a href="mailto:alfanaan.adv2@gmail.com" class="alf-footer-contact-item">
+                            <span class="alf-footer-contact-icon">
+                                <i class="fa-solid fa-envelope"></i>
+                            </span>
+
+                            <span>
+                                <small data-i18n="footer.email">البريد الإلكتروني</small>
+                                <strong dir="ltr">alfanaan.adv2@gmail.com</strong>
+                            </span>
+                        </a>
+
+                        <div class="alf-footer-contact-item">
+                            <span class="alf-footer-contact-icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </span>
+
+                            <span>
+                                <small data-i18n="footer.location">موقعنا</small>
+                                <strong data-i18n="footer.address">
+                                    مكة المكرمة - الشوقية - شارع أريكة بن شريح
+                                    بجوار جامع الصابرين
+                                </strong>
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="alf-footer-features">
+            <div class="alf-footer-feature">
+                <i class="fa-solid fa-medal"></i>
+                <span data-i18n="footer.featureQuality">جودة في التنفيذ</span>
+            </div>
+
+            <div class="alf-footer-feature">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                <span data-i18n="footer.featureCreative">تصاميم إبداعية</span>
+            </div>
+
+            <div class="alf-footer-feature">
+                <i class="fa-solid fa-handshake"></i>
+                <span data-i18n="footer.featureSupport">خدمة عملاء مميزة</span>
+            </div>
+
+            <div class="alf-footer-feature">
+                <i class="fa-solid fa-tags"></i>
+                <span data-i18n="footer.featurePrices">أسعار منافسة</span>
+            </div>
+        </div>
+
+        <div class="alf-footer-bottom">
+            <p>
+                <span data-i18n="footer.copyright">جميع الحقوق محفوظة ©</span>
+                <span id="alfFooterYear"></span>
+                <strong data-i18n="footer.companyName">
+                    شركة الفنان للدعاية والإعلان والطباعة الرقمية
+                </strong>
+            </p>
+
+            <a href="#home" class="alf-footer-backtop">
+                <span data-i18n="footer.backToTop">العودة للأعلى</span>
+                <i class="fa-solid fa-arrow-up"></i>
+            </a>
+        </div>
+
+    </div>
+</footer>
+
+            <a
+      class="whatsapp-float"
+      href="https://wa.me/966545953908"
+      target="_blank"
+      rel="noopener"
+      aria-label="تواصل عبر واتساب"
+      ><i class="fa-brands fa-whatsapp"></i
+    ></a>
+    <button class="back-to-top" id="backToTop" aria-label="العودة للأعلى">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/ScrollTrigger.min.js"></script>
+<script src="js/products-data.js"></script>
+<script src="js/index.js"></script>
+<script src="js/product-details.js"></script>
+<script src="js/language.js"></script>
+
+  </body>
+</html>
